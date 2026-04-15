@@ -1,0 +1,48 @@
+-- staging/stg_prices.sqlx
+-- Cleans and types the raw prices table.
+-- One row per ticker per date, deduplicated.
+
+config {
+  type: "table",
+  schema: "staging",
+  description: "Cleaned daily OHLCV prices — deduped, typed, nulls handled",
+  bigquery: {
+    partitionBy: "date",
+    clusterBy: ["ticker"]
+  },
+  tags: ["staging", "daily"]
+}
+
+WITH deduped AS (
+  SELECT
+    UPPER(TRIM(ticker))                       AS ticker,
+    CAST(date AS DATE)                        AS date,
+    CAST(open  AS FLOAT64)                    AS open,
+    CAST(high  AS FLOAT64)                    AS high,
+    CAST(low   AS FLOAT64)                    AS low,
+    CAST(close AS FLOAT64)                    AS close,
+    CAST(volume AS INT64)                     AS volume,
+    CAST(ingested_at AS TIMESTAMP)            AS ingested_at,
+    ROW_NUMBER() OVER (
+      PARTITION BY ticker, date
+      ORDER BY ingested_at DESC              -- keep the most recent ingest if dupes
+    ) AS row_num
+  FROM ${ref("raw", "prices")}
+  WHERE
+    ticker      IS NOT NULL
+    AND date    IS NOT NULL
+    AND close   IS NOT NULL
+    AND close   > 0
+)
+
+SELECT
+  ticker,
+  date,
+  open,
+  high,
+  low,
+  close,
+  volume,
+  ingested_at
+FROM deduped
+WHERE row_num = 1
