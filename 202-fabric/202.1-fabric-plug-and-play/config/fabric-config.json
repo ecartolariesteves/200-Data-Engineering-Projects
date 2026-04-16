@@ -1,0 +1,37 @@
+{
+  "fabric": {
+    "capacity": {
+      "sku": "F2",
+      "scale_up_sku": "F4",
+      "region": "eastus",
+      "auto_pause_minutes": 30
+    },
+    "schedule": {
+      "start_cron":  "0 7 * * 1-5",
+      "stop_cron":   "0 20 * * 1-5",
+      "timezone":    "America/Bogota"
+    }
+  },
+  "workspaces": {
+    "bronze": {
+      "display_name": "WS-Bronze",
+      "description":  "Raw ingestion layer — immutable source data"
+    },
+    "silver": {
+      "display_name": "WS-Silver",
+      "description":  "Cleansed and conformed layer"
+    },
+    "gold": {
+      "display_name": "WS-Gold",
+      "description":  "Business-ready aggregated layer"
+    }
+  },
+  "lakehouses": {
+    "bronze": { "name": "LH_Bronze", "workspace": "bronze" },
+    "silver": { "name": "LH_Silver", "workspace": "silver" },
+    "gold":   { "name": "LH_Gold",   "workspace": "gold"   }
+  },
+  "datawarehouses": {
+    "gold": { "name": "DW_Gold", "workspace": "gold" }
+  }
+}

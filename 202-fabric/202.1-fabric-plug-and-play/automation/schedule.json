@@ -1,0 +1,32 @@
+{
+  "schedules": [
+    {
+      "name":        "fabric-start-weekdays",
+      "description": "Start Fabric capacity Mon–Fri at 7:00 AM (Bogota)",
+      "runbook":     "fabric_start",
+      "frequency":   "Week",
+      "interval":    1,
+      "start_time":  "07:00",
+      "timezone":    "America/Bogota",
+      "days_of_week": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "enabled":     true
+    },
+    {
+      "name":        "fabric-stop-weekdays",
+      "description": "Stop Fabric capacity Mon–Fri at 8:00 PM (Bogota)",
+      "runbook":     "fabric_stop",
+      "frequency":   "Week",
+      "interval":    1,
+      "start_time":  "20:00",
+      "timezone":    "America/Bogota",
+      "days_of_week": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "enabled":     true
+    }
+  ],
+  "automation_variables": [
+    { "name": "FABRIC_SUBSCRIPTION",   "description": "Azure Subscription ID",          "encrypted": false },
+    { "name": "FABRIC_RESOURCE_GROUP", "description": "Resource Group of Fabric Capacity", "encrypted": false },
+    { "name": "FABRIC_CAPACITY_NAME",  "description": "Name of the Fabric Capacity resource", "encrypted": false },
+    { "name": "FABRIC_ENV",            "description": "Target environment: dev | prod",   "encrypted": false }
+  ]
+}

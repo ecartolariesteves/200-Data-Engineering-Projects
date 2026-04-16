@@ -1,0 +1,31 @@
+{
+  "environment":      "dev",
+  "azure": {
+    "subscription_id": "<SUBSCRIPTION_ID>",
+    "tenant_id":        "<TENANT_ID>",
+    "location":         "eastus"
+  },
+  "naming": {
+    "project_prefix":   "fpp",
+    "resource_group":   "rg-fpp-dev",
+    "automation_account": "aa-fpp-dev",
+    "key_vault":          "kv-fpp-dev",
+    "log_analytics":      "law-fpp-dev",
+    "fabric_capacity":    "fabric-fpp-dev"
+  },
+  "auth": {
+    "mode": "service_principal",
+    "client_id":       "<SP_CLIENT_ID>",
+    "client_secret_kv_name": "sp-client-secret"
+  },
+  "fabric": {
+    "sku": "F2",
+    "admin_email": "admin@yourdomain.com"
+  },
+  "tags": {
+    "project":     "fabric-plug-and-play",
+    "environment": "dev",
+    "cost_center": "engineering",
+    "managed_by":  "bicep"
+  }
+}
