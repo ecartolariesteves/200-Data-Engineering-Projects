@@ -1,6 +1,25 @@
-.venv/
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
 __pycache__/
 *.pyc
 .env
+.venv/
+venv/
+
+# VS Code
 .vscode/
-.terraform
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Azure / Fabric
+.azure/
+*.log
+*.tmp
+
+# Local configs / secrets
+local.settings.json
+config.local.json
+*.secrets.json
