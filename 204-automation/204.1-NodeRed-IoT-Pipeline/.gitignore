@@ -1,0 +1,20 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Node-RED
+.node-red/
+
+# Docker volumes
+uptime-kuma/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credenciales (NUNCA subir al repo)
+*.env
+.env*
+credentials.json
+*credentials*
+*secrets*

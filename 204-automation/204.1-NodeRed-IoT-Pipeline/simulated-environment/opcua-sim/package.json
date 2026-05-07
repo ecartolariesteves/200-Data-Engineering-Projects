@@ -1,0 +1,12 @@
+{
+  "name": "opcua-simulator",
+  "version": "1.0.0",
+  "description": "Servidor OPC UA simulado que replica un dispositivo Sofrel/LACROIX",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "node-opcua": "^2.119.0"
+  }
+}

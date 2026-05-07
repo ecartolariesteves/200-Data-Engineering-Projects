@@ -1,0 +1,127 @@
+[
+  {
+    "id": "tab-flow1",
+    "type": "tab",
+    "label": "Flujo 1 · REST MICROCOM",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "a1b2c3d4e5f6a1b2",
+    "type": "mqtt-broker",
+    "name": "Mosquitto local",
+    "broker": "host.docker.internal",
+    "port": "1883",
+    "clientid": "nodered-001",
+    "autoConnect": true,
+    "usetls": false,
+    "protocolVersion": "4",
+    "keepalive": "60",
+    "cleansession": true
+  },
+  {
+    "id": "inj001",
+    "type": "inject",
+    "z": "tab-flow1",
+    "name": "Cada 6 min",
+    "repeat": "360",
+    "once": true,
+    "onceDelay": 2,
+    "payload": "",
+    "payloadType": "date",
+    "x": 110,
+    "y": 100,
+    "wires": [["http001"]]
+  },
+  {
+    "id": "http001",
+    "type": "http request",
+    "z": "tab-flow1",
+    "name": "Open-Meteo Castellón",
+    "method": "GET",
+    "ret": "obj",
+    "url": "https://api.open-meteo.com/v1/forecast?latitude=39.98&longitude=-0.05&current=temperature_2m,precipitation",
+    "x": 300,
+    "y": 100,
+    "wires": [["fn-normalize"]]
+  },
+  {
+    "id": "fn-normalize",
+    "type": "function",
+    "z": "tab-flow1",
+    "name": "Normalize",
+    "func": "const c = msg.payload.current;\nif (!c || c.temperature_2m === undefined) {\n    node.error('Dato inválido o null', msg);\n    return null;\n}\nmsg.internal = {\n    deviceId: 'MICROCOM-CASTELLON-001',\n    value: c.temperature_2m,\n    timestamp: c.time + ':00Z',\n    source: 'open-meteo'\n};\nreturn msg;",
+    "outputs": 1,
+    "x": 490,
+    "y": 100,
+    "wires": [["fn-transform"]]
+  },
+  {
+    "id": "fn-transform",
+    "type": "function",
+    "z": "tab-flow1",
+    "name": "Transform NGSI WaterMeter",
+    "func": "const d = msg.internal;\nconst ctx = global.get('deviceStatus') || {};\nconst prev = ctx[d.deviceId];\nconst tipoIncidencia = (prev && d.value < prev.value) ? 1 : 0;\nmsg.payload = JSON.stringify({\n    id: d.deviceId,\n    type: 'WaterMeter',\n    TimeInstant: { type: 'DateTime', value: d.timestamp },\n    serialNumber: { type: 'Text', value: d.deviceId },\n    vol: { type: 'Number', value: d.value },\n    waterConsumption: { type: 'Number', value: Math.round(d.value * 1000) },\n    maxWaterFlow: { type: 'Number', value: 0 },\n    battery: { type: 'Number', value: 0.85 },\n    batteryState: { type: 'Text', value: 'ok' },\n    hasTamperAlert: { type: 'Boolean', value: false },\n    category: { type: 'Text', value: 'cold' },\n    tipoIncidencia: tipoIncidencia,\n    source: d.source\n});\nctx[d.deviceId] = {\n    value: d.value,\n    timestamp: d.timestamp,\n    status: 'ok',\n    errors: (ctx[d.deviceId] ? ctx[d.deviceId].errors : 0)\n};\nglobal.set('deviceStatus', ctx);\nmsg.topic = 'smartvillages/watermeter/microcom';\nreturn msg;",
+    "outputs": 1,
+    "x": 690,
+    "y": 100,
+    "wires": [["mqtt001", "dbg-ok"]]
+  },
+  {
+    "id": "mqtt001",
+    "type": "mqtt out",
+    "z": "tab-flow1",
+    "name": "MQTT publish",
+    "topic": "",
+    "qos": "1",
+    "retain": "false",
+    "broker": "a1b2c3d4e5f6a1b2",
+    "x": 920,
+    "y": 80,
+    "wires": []
+  },
+  {
+    "id": "dbg-ok",
+    "type": "debug",
+    "z": "tab-flow1",
+    "name": "OK · payload NGSI",
+    "active": true,
+    "complete": "payload",
+    "x": 920,
+    "y": 140,
+    "wires": []
+  },
+  {
+    "id": "catch001",
+    "type": "catch",
+    "z": "tab-flow1",
+    "name": "Capturar errores",
+    "scope": null,
+    "uncaught": false,
+    "x": 150,
+    "y": 280,
+    "wires": [["fn-retry"]]
+  },
+  {
+    "id": "fn-retry",
+    "type": "function",
+    "z": "tab-flow1",
+    "name": "Cola reintentos · máx 3 · 5 min",
+    "func": "const deviceId = 'MICROCOM-CASTELLON-001';\nconst queue = global.get('retryQueue') || {};\nif (!queue[deviceId]) {\n    queue[deviceId] = { attempts: 0, lastError: msg.error.message, ts: Date.now() };\n}\nqueue[deviceId].attempts++;\nconst ctx = global.get('deviceStatus') || {};\nif (!ctx[deviceId]) ctx[deviceId] = { value: null, timestamp: null, errors: 0 };\nctx[deviceId].status = 'error';\nctx[deviceId].errors = queue[deviceId].attempts;\nctx[deviceId].lastError = msg.error.message;\nglobal.set('deviceStatus', ctx);\nif (queue[deviceId].attempts >= 3) {\n    node.warn('MAX REINTENTOS alcanzado para ' + deviceId);\n    queue[deviceId] = null;\n    global.set('retryQueue', queue);\n    const logs = global.get('errorLog') || [];\n    logs.push({ deviceId, error: msg.error.message, ts: new Date().toISOString() });\n    if (logs.length > 100) logs.shift();\n    global.set('errorLog', logs);\n    return null;\n}\nglobal.set('retryQueue', queue);\nnode.warn('Error capturado · Reintento ' + queue[deviceId].attempts + '/3 en 5 min');\nsetTimeout(() => { node.send(msg); }, 5 * 60 * 1000);\nreturn null;",
+    "outputs": 1,
+    "x": 400,
+    "y": 280,
+    "wires": [["http001"]]
+  },
+  {
+    "id": "dbg-err",
+    "type": "debug",
+    "z": "tab-flow1",
+    "name": "ERROR · ver detalle",
+    "active": true,
+    "complete": "error",
+    "x": 650,
+    "y": 280,
+    "wires": []
+  }
+]
