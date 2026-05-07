@@ -1,4 +1,4 @@
-# POC · Node-RED IoT Pipeline · Fase 1
+# POC · Node-RED IoT Pipeline
 
 Entorno de práctica local que replica la arquitectura del proyecto de contadores de agua de la Diputación de Castellón.
 
