@@ -1,0 +1,5 @@
+Flask==3.0.3
+yfinance==0.2.40
+google-cloud-bigquery==3.25.0
+google-cloud-storage==2.18.2
+google-auth==2.35.0

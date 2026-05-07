@@ -1,0 +1,52 @@
+-- mart/fct_daily_prices.sqlx
+-- Analytical fact table enriched with rolling metrics.
+-- This is what Looker Studio queries directly.
+
+config {
+  type: "table",
+  schema: "mart",
+  description: "Daily prices enriched with 7d/30d/90d moving averages and volume ratios",
+  bigquery: {
+    partitionBy: "date",
+    clusterBy: ["ticker"]
+  },
+  tags: ["mart", "daily"]
+}
+
+SELECT
+  ticker,
+  date,
+  open,
+  high,
+  low,
+  close,
+  volume,
+
+  -- Daily price change
+  close - LAG(close) OVER w                           AS price_change,
+  SAFE_DIVIDE(
+    close - LAG(close) OVER w,
+    LAG(close) OVER w
+  ) * 100                                             AS price_change_pct,
+
+  -- Moving averages
+  AVG(close)  OVER (w ROWS BETWEEN 6  PRECEDING AND CURRENT ROW) AS ma_7d,
+  AVG(close)  OVER (w ROWS BETWEEN 29 PRECEDING AND CURRENT ROW) AS ma_30d,
+  AVG(close)  OVER (w ROWS BETWEEN 89 PRECEDING AND CURRENT ROW) AS ma_90d,
+
+  -- Volume metrics
+  AVG(volume) OVER (w ROWS BETWEEN 29 PRECEDING AND CURRENT ROW) AS avg_volume_30d,
+  SAFE_DIVIDE(
+    volume,
+    AVG(volume) OVER (w ROWS BETWEEN 29 PRECEDING AND CURRENT ROW)
+  )                                                   AS volume_ratio_30d,
+
+  -- Daily range
+  high - low                                          AS daily_range,
+  SAFE_DIVIDE(high - low, low) * 100                  AS daily_range_pct,
+
+  ingested_at
+
+FROM ${ref("stg_prices")}
+
+WINDOW w AS (PARTITION BY ticker ORDER BY date)

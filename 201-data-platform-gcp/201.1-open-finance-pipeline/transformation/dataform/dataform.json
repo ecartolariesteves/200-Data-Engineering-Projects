@@ -1,0 +1,7 @@
+{
+  "defaultProject": "YOUR_GCP_PROJECT_ID",
+  "defaultLocation": "EU",
+  "defaultDatabase": "YOUR_GCP_PROJECT_ID",
+  "defaultSchema": "staging",
+  "assertionSchema": "dataform_assertions"
+}

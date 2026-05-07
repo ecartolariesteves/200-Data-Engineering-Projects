@@ -1,0 +1,54 @@
+-- mart/dim_tickers.sqlx
+-- Dimension table with metadata per ticker.
+-- Enriched with latest price snapshot for dashboard KPIs.
+
+config {
+  type: "table",
+  schema: "mart",
+  description: "Ticker dimension — latest price, 52-week range, sector metadata",
+  tags: ["mart", "daily"]
+}
+
+WITH latest AS (
+  SELECT
+    ticker,
+    close        AS latest_close,
+    date         AS latest_date,
+    ma_7d,
+    ma_30d,
+    ma_90d,
+    ROW_NUMBER() OVER (PARTITION BY ticker ORDER BY date DESC) AS rn
+  FROM ${ref("fct_daily_prices")}
+),
+
+stats_52w AS (
+  SELECT
+    ticker,
+    MIN(low)   AS low_52w,
+    MAX(high)  AS high_52w,
+    SUM(volume) AS total_volume_52w
+  FROM ${ref("fct_daily_prices")}
+  WHERE date >= DATE_SUB(CURRENT_DATE(), INTERVAL 52 WEEK)
+  GROUP BY ticker
+)
+
+SELECT
+  l.ticker,
+  l.latest_close,
+  l.latest_date,
+  l.ma_7d,
+  l.ma_30d,
+  l.ma_90d,
+  s.low_52w,
+  s.high_52w,
+  s.total_volume_52w,
+
+  -- Position within 52-week range (0 = at low, 1 = at high)
+  SAFE_DIVIDE(
+    l.latest_close - s.low_52w,
+    s.high_52w - s.low_52w
+  ) AS position_in_52w_range
+
+FROM latest l
+JOIN stats_52w s USING (ticker)
+WHERE l.rn = 1
