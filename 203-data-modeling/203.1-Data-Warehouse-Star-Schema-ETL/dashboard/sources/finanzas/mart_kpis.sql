@@ -1,0 +1,1 @@
+select * from main_gold.mart_kpis

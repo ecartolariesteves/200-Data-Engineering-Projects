@@ -1,0 +1,4 @@
+name: finanzas
+type: duckdb
+options:
+  filename: ../../../data/finanzas_dw.db

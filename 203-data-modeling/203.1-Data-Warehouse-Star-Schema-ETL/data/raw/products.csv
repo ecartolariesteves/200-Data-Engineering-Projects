@@ -1,0 +1,13 @@
+product_id,product_name,product_category,interest_rate_pct,fee_rate_pct,is_active,created_at
+PRD-001,Cuenta Corriente,Depósito,0.0,0.0,True,2022-01-01
+PRD-002,Cuenta de Ahorro,Depósito,2.5,0.0,True,2022-01-01
+PRD-003,Cuenta Ahorro Plus,Depósito,4.1,0.0,True,2022-01-01
+PRD-004,Tarjeta de Crédito,Crédito,0.0,28.99,True,2022-01-01
+PRD-005,Tarjeta Black,Crédito,0.0,22.5,True,2022-01-01
+PRD-006,Préstamo Personal,Crédito,0.0,12.75,True,2022-01-01
+PRD-007,Préstamo Hipotecario,Hipoteca,0.0,5.25,True,2022-01-01
+PRD-008,Préstamo Automotriz,Crédito,0.0,9.99,True,2022-01-01
+PRD-009,Fondo de Inversión A,Inversión,6.8,0.0,True,2022-01-01
+PRD-010,Fondo de Inversión B,Inversión,9.2,0.0,True,2022-01-01
+PRD-011,Plazo Fijo 30d,Depósito,5.5,0.0,True,2022-01-01
+PRD-012,Plazo Fijo 90d,Depósito,6.3,0.0,True,2022-01-01

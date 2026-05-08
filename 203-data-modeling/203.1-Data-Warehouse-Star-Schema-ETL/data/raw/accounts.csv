@@ -1,0 +1,501 @@
+account_id,customer_name,email,phone,branch,segment,risk_level,product_id,open_date,status,credit_limit,balance,created_at,updated_at
+ACC-00001,Albano Llopis Hierro,emiliocalatayud@example.net,+34823 96 00 13,Bilbao,Premium,Bajo,PRD-001,2022-04-25,Activa,51247.59,1468368.88,2022-04-25,2022-04-25
+ACC-00002,José Antonio de Flor,cgimenez@example.net,+34 886 02 65 42,Málaga,Retail,Bajo,PRD-010,2022-03-31,Activa,116330.45,1184138.39,2022-03-31,2022-03-31
+ACC-00003,Rico Navarro,bruricardo@example.org,+34 927594078,Málaga,Premium,Medio,PRD-012,2022-07-23,Activa,404715.23,-36677.54,2022-07-23,2022-07-23
+ACC-00004,Íñigo Pinedo Bermúdez,paula95@example.net,+34871103413,Málaga,Empresas,Medio,PRD-012,2022-06-13,Activa,478606.54,640018.82,2022-06-13,2022-06-13
+ACC-00005,Goyo Lobo Santana,fermin55@example.org,+34884 192 832,Barcelona,Empresas,Medio,PRD-007,2022-04-05,Activa,403564.14,1445950.16,2022-04-05,2022-04-05
+ACC-00006,Fortunata Lerma Gimenez,pia03@example.org,+34916 41 39 53,Barcelona,Empresas,Alto,PRD-007,2022-05-08,Activa,430853.45,1133571.9,2022-05-08,2022-05-08
+ACC-00007,Gertrudis Segarra Clavero,emilio38@example.net,+34883 96 96 53,Sevilla,Empresas,Bajo,PRD-001,2022-03-13,Inactiva,433241.83,729258.76,2022-03-13,2022-03-13
+ACC-00008,José Manuel Uriarte Bou,canalsezequiel@example.net,+34 847691669,Zaragoza,Premium,Medio,PRD-011,2023-04-10,Activa,335087.59,1388731.64,2023-04-10,2023-04-10
+ACC-00009,Lucía Iglesias Alberdi,lasamaria-jose@example.net,+34 924 146 270,Valencia,Premium,Bajo,PRD-010,2022-03-15,Activa,134973.91,1847051.92,2022-03-15,2022-03-15
+ACC-00010,Josué Escalona-Vera,martinprudencia@example.net,+34982 932 528,Zaragoza,Retail,Bajo,PRD-011,2022-08-13,Inactiva,402522.9,772387.81,2022-08-13,2022-08-13
+ACC-00011,Ágata Abascal,amaya01@example.com,+34 902 30 39 11,Zaragoza,Premium,Alto,PRD-004,2022-03-09,Activa,442341.58,1267846.33,2022-03-09,2022-03-09
+ACC-00012,Sabina Bayón Casas,georginatalavera@example.net,+34 848489638,Valencia,Premium,Alto,PRD-005,2022-05-27,Activa,131370.8,1148401.28,2022-05-27,2022-05-27
+ACC-00013,Pepe Mesa,cperea@example.net,+34 973 133 150,Sevilla,Premium,Alto,PRD-006,2023-02-13,Activa,377891.08,1715260.96,2023-02-13,2023-02-13
+ACC-00014,Manola Grau-Giménez,beldalaura@example.net,+34 813 105 183,Valencia,Pyme,Alto,PRD-011,2022-06-06,Activa,190809.64,1992048.83,2022-06-06,2022-06-06
+ACC-00015,Nicanor Torralba-Gargallo,loretosuarez@example.org,+34976631165,Madrid,Retail,Alto,PRD-005,2023-06-26,Inactiva,375438.9,1525627.4,2023-06-26,2023-06-26
+ACC-00016,Guiomar Solera Balaguer,barrerasamuel@example.net,+34923 13 33 87,Bilbao,Pyme,Bajo,PRD-002,2022-12-15,Activa,476907.96,1745498.53,2022-12-15,2022-12-15
+ACC-00017,Héctor Español Lopez,eiborra@example.com,+34825080132,Valencia,Retail,Alto,PRD-009,2022-09-27,Activa,319474.75,1198388.93,2022-09-27,2022-09-27
+ACC-00018,Julieta Teruel García,kbarral@example.com,+34 664 74 68 72,Valencia,Retail,Alto,PRD-006,2022-06-06,Activa,9738.37,1854652.16,2022-06-06,2022-06-06
+ACC-00019,Eusebio Gelabert,barreramariana@example.com,+34807097882,Madrid,Premium,Alto,PRD-004,2022-11-11,Inactiva,42826.73,946280.45,2022-11-11,2022-11-11
+ACC-00020,José Manuel Bernat Estevez,bayoimelda@example.org,+34945 19 39 90,Valencia,Premium,Alto,PRD-009,2022-03-12,Activa,274901.8,493366.09,2022-03-12,2022-03-12
+ACC-00021,Anita Hortensia Yáñez Molina,hernando53@example.com,+34944 247 510,Sevilla,Empresas,Medio,PRD-004,2023-03-10,Cerrada,324939.03,848105.17,2023-03-10,2023-03-10
+ACC-00022,María Ángeles Cabo Beltrán,antonialara@example.org,+34925 135 427,Barcelona,Premium,Bajo,PRD-008,2023-06-14,Activa,10517.13,1085539.12,2023-06-14,2023-06-14
+ACC-00023,Ofelia del Ángel,marigracia@example.org,+34842 41 18 24,Barcelona,Retail,Bajo,PRD-001,2022-08-14,Activa,15706.48,627378.4,2022-08-14,2022-08-14
+ACC-00024,Marciano Cruz Novoa Frutos,anselma74@example.org,+34824640052,Bilbao,Pyme,Bajo,PRD-004,2023-06-11,Activa,361676.28,1758885.3,2023-06-11,2023-06-11
+ACC-00025,Cecilio Sala-Roma,caparroscarlos@example.net,+34 845 80 59 82,Alicante,Pyme,Bajo,PRD-004,2023-04-30,Activa,329491.37,676310.01,2023-04-30,2023-04-30
+ACC-00026,Belen Arnaiz Mendez,trini05@example.org,+34881 158 692,Madrid,Retail,Bajo,PRD-008,2023-02-25,Activa,169651.3,1716428.7,2023-02-25,2023-02-25
+ACC-00027,Toni de Elorza,lamat@example.net,+34922634216,Sevilla,Pyme,Bajo,PRD-004,2022-09-12,Activa,139272.57,462103.22,2022-09-12,2022-09-12
+ACC-00028,Timoteo Sosa Girón,olgasegui@example.com,+34 902 330 365,Barcelona,Retail,Alto,PRD-008,2022-03-19,Cerrada,418013.79,1936442.33,2022-03-19,2022-03-19
+ACC-00029,Toni Baños-Lorenzo,felipa86@example.net,+34987 501 429,Málaga,Pyme,Medio,PRD-003,2022-08-31,Activa,200520.15,70202.57,2022-08-31,2022-08-31
+ACC-00030,Alejo Camps-Rovira,luisina56@example.net,+34 983169340,Málaga,Empresas,Medio,PRD-001,2023-01-24,Activa,348295.75,1447535.9,2023-01-24,2023-01-24
+ACC-00031,Abigaíl Vizcaíno Figueras,tomas15@example.net,+34911 484 656,Sevilla,Empresas,Bajo,PRD-003,2023-05-14,Cerrada,289590.15,1061500.16,2023-05-14,2023-05-14
+ACC-00032,Leonel Bernardo Feliu Rivero,ndavila@example.net,+34 901 68 04 43,Madrid,Pyme,Alto,PRD-001,2022-11-18,Inactiva,265563.07,66603.14,2022-11-18,2022-11-18
+ACC-00033,Roberta Montserrat Sola,rsalamanca@example.org,+34 983721489,Valencia,Retail,Alto,PRD-002,2023-06-05,Activa,430909.6,777739.88,2023-06-05,2023-06-05
+ACC-00034,Araceli Gutierrez Menéndez,noeliaflor@example.org,+34 730379176,Madrid,Retail,Medio,PRD-010,2022-09-10,Activa,282613.46,598558.18,2022-09-10,2022-09-10
+ACC-00035,Charo Plana-Urrutia,jhervas@example.net,+34616 32 87 08,Zaragoza,Premium,Medio,PRD-004,2022-09-25,Activa,335845.11,564994.01,2022-09-25,2022-09-25
+ACC-00036,Álvaro de Sastre,nicolasasobrino@example.net,+34986 895 798,Madrid,Pyme,Alto,PRD-002,2022-11-20,Cerrada,498048.22,100184.48,2022-11-20,2022-11-20
+ACC-00037,Selena Salmerón Cuenca,qsandoval@example.org,+34 886873471,Bilbao,Premium,Medio,PRD-009,2022-08-07,Inactiva,439635.12,707530.53,2022-08-07,2022-08-07
+ACC-00038,Desiderio Elías Narváez Montenegro,chaconeutropio@example.org,+34 942 23 16 65,Bilbao,Retail,Alto,PRD-008,2022-06-11,Inactiva,149689.38,1309946.87,2022-06-11,2022-06-11
+ACC-00039,Josefa del Barrios,pepitarivera@example.com,+34 729 67 05 46,Barcelona,Retail,Alto,PRD-005,2022-05-18,Activa,136174.11,1189901.15,2022-05-18,2022-05-18
+ACC-00040,Lupita Giménez Torrents,leandroruano@example.com,+34736 56 27 29,Bilbao,Pyme,Medio,PRD-004,2022-12-18,Inactiva,423051.86,139211.86,2022-12-18,2022-12-18
+ACC-00041,Alba del Amores,romeroelpidio@example.com,+34 860 465 375,Madrid,Retail,Medio,PRD-005,2023-03-10,Activa,318556.69,487008.29,2023-03-10,2023-03-10
+ACC-00042,Pía Pinilla Lobo,finiesta@example.com,+34 728053100,Málaga,Retail,Bajo,PRD-009,2023-03-29,Activa,441553.2,1803053.57,2023-03-29,2023-03-29
+ACC-00043,Cornelio de Corominas,edmundosaenz@example.net,+34828 937 452,Valencia,Pyme,Bajo,PRD-006,2022-02-06,Activa,182325.76,1862830.42,2022-02-06,2022-02-06
+ACC-00044,María Dolores Piedad Carbó Céspedes,candido90@example.com,+34 941 631 931,Sevilla,Premium,Alto,PRD-006,2022-02-10,Activa,390058.12,1762476.14,2022-02-10,2022-02-10
+ACC-00045,Teodoro Octavio Carrillo Armengol,berta65@example.org,+34 982 50 67 16,Valencia,Premium,Bajo,PRD-010,2023-02-21,Cerrada,405385.86,1756903.22,2023-02-21,2023-02-21
+ACC-00046,Mercedes Segura Coronado,uecheverria@example.net,+34 885 987 769,Zaragoza,Pyme,Alto,PRD-003,2022-01-26,Inactiva,405374.66,496951.7,2022-01-26,2022-01-26
+ACC-00047,Felix Higueras-Bolaños,socorro73@example.com,+34941507527,Madrid,Pyme,Bajo,PRD-007,2022-04-21,Activa,459225.95,666799.77,2022-04-21,2022-04-21
+ACC-00048,Galo Jordán,lino94@example.net,+34708313678,Madrid,Premium,Medio,PRD-004,2022-08-22,Activa,432176.47,1932122.66,2022-08-22,2022-08-22
+ACC-00049,Onofre del Tudela,falemany@example.com,+34876634957,Málaga,Empresas,Bajo,PRD-006,2022-10-13,Activa,485200.31,316064.02,2022-10-13,2022-10-13
+ACC-00050,Luisa del Roig,pastor74@example.com,+34881 31 35 18,Barcelona,Pyme,Medio,PRD-001,2022-09-29,Activa,156838.66,1192728.15,2022-09-29,2022-09-29
+ACC-00051,Clemente Gascón Tomé,lourdes98@example.net,+34 887134352,Málaga,Premium,Medio,PRD-002,2023-06-08,Activa,218028.76,1015836.71,2023-06-08,2023-06-08
+ACC-00052,Adrián Paulino Castañeda Lledó,ballestercarolina@example.com,+34841 710 947,Málaga,Retail,Alto,PRD-006,2022-07-21,Inactiva,311577.7,1309944.33,2022-07-21,2022-07-21
+ACC-00053,Isabela Niño Espinosa,iriarterosalva@example.com,+34 828 16 71 90,Bilbao,Empresas,Alto,PRD-012,2022-05-08,Activa,201200.19,556093.17,2022-05-08,2022-05-08
+ACC-00054,Carlito Mateu Blázquez,diegorico@example.net,+34877 867 749,Málaga,Pyme,Alto,PRD-004,2022-05-11,Activa,87013.67,1116665.77,2022-05-11,2022-05-11
+ACC-00055,Encarnación Barrena Cabezas,eufemiagalvan@example.com,+34822 23 28 12,Madrid,Empresas,Medio,PRD-009,2023-02-20,Activa,392879.41,1193656.22,2023-02-20,2023-02-20
+ACC-00056,Hernando Sanjuan Soriano,anacleto34@example.net,+34 887713493,Alicante,Pyme,Alto,PRD-008,2022-11-26,Activa,236593.09,1797420.69,2022-11-26,2022-11-26
+ACC-00057,Aurora Gomila Company,pascuala21@example.org,+34 848499471,Barcelona,Empresas,Alto,PRD-011,2022-06-23,Activa,309630.4,141443.76,2022-06-23,2022-06-23
+ACC-00058,Noemí Mateu Quevedo,angelita87@example.com,+34822906594,Bilbao,Premium,Bajo,PRD-011,2022-08-29,Activa,23106.86,1967068.85,2022-08-29,2022-08-29
+ACC-00059,Artemio Granados Almansa,corona02@example.com,+34984 742 967,Málaga,Premium,Alto,PRD-008,2022-03-16,Activa,247188.58,450168.1,2022-03-16,2022-03-16
+ACC-00060,Joel Oliveras Real,miguel-angel12@example.com,+34 947746807,Málaga,Premium,Bajo,PRD-002,2022-01-06,Inactiva,347955.89,902327.26,2022-01-06,2022-01-06
+ACC-00061,Fausto Iniesta Morales,quinterorosaura@example.net,+34 687603859,Alicante,Premium,Medio,PRD-002,2022-09-13,Activa,493946.23,1170677.25,2022-09-13,2022-09-13
+ACC-00062,Maura Salamanca Aznar,juanitocastro@example.com,+34967109324,Málaga,Pyme,Bajo,PRD-010,2023-03-30,Activa,237337.22,481342.67,2023-03-30,2023-03-30
+ACC-00063,Adoración del Buendía,prudenciacarballo@example.com,+34 832 748 467,Bilbao,Pyme,Alto,PRD-011,2022-09-11,Activa,219936.3,1412766.97,2022-09-11,2022-09-11
+ACC-00064,Daniela Saura Coca,mfarre@example.net,+34 843146584,Zaragoza,Empresas,Alto,PRD-005,2022-08-29,Activa,75415.33,735222.35,2022-08-29,2022-08-29
+ACC-00065,Epifanio Martín Tovar,victorianotome@example.com,+34922886753,Sevilla,Retail,Medio,PRD-012,2022-06-06,Activa,271305.57,802337.18,2022-06-06,2022-06-06
+ACC-00066,Lucho del Guillen,uarranz@example.net,+34976662702,Málaga,Retail,Alto,PRD-007,2022-07-31,Activa,2948.04,671105.55,2022-07-31,2022-07-31
+ACC-00067,Marta Mármol,sacristancornelio@example.net,+34973 02 62 17,Sevilla,Pyme,Bajo,PRD-007,2023-02-04,Activa,242821.0,747157.27,2023-02-04,2023-02-04
+ACC-00068,Fortunato Puga-Bernat,reyes86@example.com,+34 979809134,Valencia,Pyme,Bajo,PRD-012,2023-02-19,Cerrada,267061.81,1809204.17,2023-02-19,2023-02-19
+ACC-00069,Raúl de Roura,cabreravicente@example.org,+34 901 005 045,Málaga,Premium,Medio,PRD-002,2022-01-28,Activa,130078.16,621072.97,2022-01-28,2022-01-28
+ACC-00070,Irene Coello Hidalgo,kescolano@example.org,+34 822 96 93 79,Zaragoza,Pyme,Medio,PRD-006,2023-04-11,Activa,415962.14,467156.64,2023-04-11,2023-04-11
+ACC-00071,David Serra Izquierdo,qjara@example.org,+34 975 48 21 75,Madrid,Retail,Medio,PRD-008,2022-03-25,Activa,34309.19,1912435.49,2022-03-25,2022-03-25
+ACC-00072,Emperatriz Rodrigo-Ibáñez,mmatas@example.com,+34 978 13 69 59,Sevilla,Premium,Bajo,PRD-001,2022-02-11,Activa,119272.47,920800.17,2022-02-11,2022-02-11
+ACC-00073,Pancho Eusebio Almeida Priego,adan90@example.net,+34980439533,Sevilla,Pyme,Alto,PRD-010,2022-04-28,Activa,184447.59,1192080.02,2022-04-28,2022-04-28
+ACC-00074,Dionisia Nidia Cerro Caballero,mendizabalmodesta@example.com,+34749521456,Bilbao,Retail,Alto,PRD-003,2022-04-28,Activa,155978.62,1338561.94,2022-04-28,2022-04-28
+ACC-00075,Cornelio Catalán Paz,paulina24@example.com,+34 900 51 71 23,Sevilla,Retail,Alto,PRD-007,2023-01-20,Activa,313621.2,158897.68,2023-01-20,2023-01-20
+ACC-00076,Soraya Paz Bosch,qalcala@example.net,+34 841 754 965,Barcelona,Retail,Medio,PRD-011,2022-11-05,Activa,330760.67,91361.31,2022-11-05,2022-11-05
+ACC-00077,Nicolás Guillen Soto,mosquerayolanda@example.net,+34876174612,Málaga,Pyme,Bajo,PRD-001,2022-12-16,Activa,181094.02,1777728.78,2022-12-16,2022-12-16
+ACC-00078,Alejo Mayo Ugarte,cabanillasjoel@example.net,+34 843 675 869,Valencia,Pyme,Bajo,PRD-012,2023-04-16,Activa,482736.87,503668.91,2023-04-16,2023-04-16
+ACC-00079,Venceslás Ribera Cabeza,rraya@example.org,+34 933773515,Málaga,Empresas,Medio,PRD-008,2023-05-11,Inactiva,415365.51,127658.94,2023-05-11,2023-05-11
+ACC-00080,Xiomara del Barrera,mllorente@example.org,+34973 139 005,Alicante,Pyme,Medio,PRD-004,2023-04-07,Activa,425476.42,322771.71,2023-04-07,2023-04-07
+ACC-00081,Bernardino de Bayona,deliagarzon@example.org,+34 922 290 422,Bilbao,Empresas,Medio,PRD-006,2022-08-06,Inactiva,350591.88,516350.58,2022-08-06,2022-08-06
+ACC-00082,Dionisia de Canet,catalaalbino@example.com,+34879 950 240,Sevilla,Retail,Bajo,PRD-009,2022-01-11,Activa,244288.92,1504237.54,2022-01-11,2022-01-11
+ACC-00083,Raimundo Robledo Zorrilla,bartolomealba@example.com,+34927891783,Alicante,Pyme,Bajo,PRD-011,2023-05-03,Activa,110798.2,1368163.67,2023-05-03,2023-05-03
+ACC-00084,Amada Pascuala Vázquez Mata,danguita@example.com,+34945 617 711,Zaragoza,Pyme,Alto,PRD-011,2022-11-10,Activa,212751.91,1479167.65,2022-11-10,2022-11-10
+ACC-00085,María Fernanda Colomer Bastida,leonardomorcillo@example.com,+34986 478 961,Alicante,Empresas,Medio,PRD-006,2022-12-05,Activa,60327.94,344797.8,2022-12-05,2022-12-05
+ACC-00086,Teodosio Garrido Ropero,agracia@example.com,+34 973 66 15 65,Valencia,Premium,Bajo,PRD-012,2022-05-03,Activa,138249.81,1158653.16,2022-05-03,2022-05-03
+ACC-00087,Glauco Corominas-Sánchez,boupaz@example.org,+34824 61 52 80,Bilbao,Retail,Bajo,PRD-010,2023-06-22,Activa,180440.53,569648.56,2023-06-22,2023-06-22
+ACC-00088,Mar Murcia-Carvajal,qotero@example.com,+34806494519,Madrid,Retail,Alto,PRD-005,2022-05-10,Activa,472044.81,1257632.79,2022-05-10,2022-05-10
+ACC-00089,Cloe Cortes,ggomez@example.com,+34928149368,Madrid,Empresas,Medio,PRD-002,2023-05-18,Activa,170352.97,1929270.17,2023-05-18,2023-05-18
+ACC-00090,María Luisa Nereida Amo Lastra,escribanoleandro@example.net,+34902550229,Barcelona,Retail,Medio,PRD-008,2022-09-16,Activa,288510.58,1357224.59,2022-09-16,2022-09-16
+ACC-00091,Anastasia Cifuentes Anglada,garridorenato@example.com,+34 973 52 54 59,Bilbao,Retail,Bajo,PRD-003,2022-06-05,Activa,382221.72,1192951.19,2022-06-05,2022-06-05
+ACC-00092,Anselma Verónica Badía Cortés,mariselaayala@example.net,+34822 47 67 97,Málaga,Pyme,Medio,PRD-009,2022-08-20,Activa,294262.57,829101.16,2022-08-20,2022-08-20
+ACC-00093,Elena Garriga Vila,ochoatito@example.org,+34 887 97 84 03,Barcelona,Premium,Alto,PRD-010,2022-03-03,Activa,330214.07,271967.04,2022-03-03,2022-03-03
+ACC-00094,María Belén Ballesteros Aguilera,marcialgalvan@example.org,+34882 451 076,Barcelona,Premium,Bajo,PRD-009,2022-06-27,Activa,344685.57,913320.58,2022-06-27,2022-06-27
+ACC-00095,Berto Pinto Grau,calixto60@example.com,+34 727159696,Bilbao,Empresas,Alto,PRD-004,2022-02-03,Inactiva,35589.88,428518.8,2022-02-03,2022-02-03
+ACC-00096,Ema Cardona Quirós,morcillofrancisco-javier@example.net,+34974 516 136,Sevilla,Pyme,Bajo,PRD-011,2022-09-28,Activa,323817.36,1812243.46,2022-09-28,2022-09-28
+ACC-00097,Gracia Zamora-Bermúdez,vmenendez@example.com,+34876521818,Madrid,Premium,Medio,PRD-002,2022-05-26,Activa,412120.15,1838444.68,2022-05-26,2022-05-26
+ACC-00098,Charo Olmedo,lucia23@example.org,+34844 43 29 21,Alicante,Empresas,Alto,PRD-002,2023-03-26,Activa,136123.1,1056962.2,2023-03-26,2023-03-26
+ACC-00099,Rolando Uribe Simó,omoraleda@example.com,+34845717744,Madrid,Pyme,Alto,PRD-002,2023-03-25,Activa,125183.95,137220.12,2023-03-25,2023-03-25
+ACC-00100,Amor Ortiz-Vera,menendezinigo@example.com,+34 800 05 41 19,Bilbao,Retail,Bajo,PRD-011,2022-01-22,Activa,325754.74,1827949.22,2022-01-22,2022-01-22
+ACC-00101,Lilia Fátima Sevillano Armengol,ufabra@example.net,+34 977820715,Málaga,Pyme,Bajo,PRD-010,2022-07-05,Activa,204174.05,608169.42,2022-07-05,2022-07-05
+ACC-00102,José Antonio Duque Ariza,laurario@example.com,+34 985 89 25 54,Zaragoza,Pyme,Alto,PRD-003,2022-04-18,Activa,331291.77,770927.12,2022-04-18,2022-04-18
+ACC-00103,Guadalupe Neira Badía,blas51@example.net,+34942 44 92 51,Barcelona,Empresas,Medio,PRD-008,2022-02-07,Activa,485092.36,778558.87,2022-02-07,2022-02-07
+ACC-00104,Narcisa Cid-Olmo,gabriela62@example.net,+34 823 48 65 28,Alicante,Pyme,Bajo,PRD-001,2023-06-11,Activa,180889.68,1500708.47,2023-06-11,2023-06-11
+ACC-00105,Mohamed Roda Verdugo,alejandro54@example.org,+34875 573 322,Sevilla,Empresas,Alto,PRD-001,2023-03-29,Activa,144014.57,1755735.57,2023-03-29,2023-03-29
+ACC-00106,Eusebio Cadenas Vera,navarrosarita@example.net,+34 842 96 22 29,Madrid,Premium,Alto,PRD-002,2023-05-12,Activa,275419.5,1082115.39,2023-05-12,2023-05-12
+ACC-00107,Poncio Río Arranz,rpastor@example.net,+34879 794 738,Barcelona,Pyme,Bajo,PRD-004,2022-04-06,Activa,76985.56,1861938.77,2022-04-06,2022-04-06
+ACC-00108,Fabián del Ferrera,irene97@example.com,+34 887 688 623,Bilbao,Pyme,Medio,PRD-009,2022-10-26,Cerrada,121865.45,1080093.41,2022-10-26,2022-10-26
+ACC-00109,Bernardita Trini Ibáñez Azorin,jpera@example.org,+34 984 141 247,Valencia,Retail,Medio,PRD-004,2023-01-28,Activa,427206.19,646744.25,2023-01-28,2023-01-28
+ACC-00110,Brunilda Ruiz,gironaolga@example.com,+34925 060 685,Madrid,Empresas,Alto,PRD-005,2023-06-04,Activa,293468.86,1997749.78,2023-06-04,2023-06-04
+ACC-00111,Guadalupe de Perera,amaromontalban@example.org,+34 923220472,Alicante,Pyme,Medio,PRD-003,2023-05-17,Activa,381436.34,723280.61,2023-05-17,2023-05-17
+ACC-00112,Jacinta Adadia Bernad,jaenildefonso@example.org,+34 986 614 341,Sevilla,Pyme,Bajo,PRD-004,2022-11-26,Inactiva,205387.55,602261.47,2022-11-26,2022-11-26
+ACC-00113,Dimas Rivas Sebastián,canteropiedad@example.com,+34 987 08 93 24,Málaga,Pyme,Alto,PRD-012,2023-04-30,Activa,326009.5,261815.91,2023-04-30,2023-04-30
+ACC-00114,Abigaíl Osorio Hernandez,qexposito@example.net,+34823 851 888,Zaragoza,Retail,Medio,PRD-003,2022-02-07,Activa,455220.84,-18537.42,2022-02-07,2022-02-07
+ACC-00115,Manola Almagro,csoriano@example.net,+34 943 540 515,Valencia,Retail,Medio,PRD-007,2022-05-28,Activa,132511.39,1227681.77,2022-05-28,2022-05-28
+ACC-00116,Quique de Márquez,arsenioortuno@example.net,+34923277221,Barcelona,Empresas,Alto,PRD-011,2023-02-12,Inactiva,190004.7,599155.37,2023-02-12,2023-02-12
+ACC-00117,Alicia Marcos Fortuny,floressoraya@example.org,+34914 86 87 40,Madrid,Retail,Bajo,PRD-009,2023-05-15,Activa,460464.55,1994723.14,2023-05-15,2023-05-15
+ACC-00118,Eric Palau,marmolleandro@example.org,+34928667652,Barcelona,Retail,Medio,PRD-007,2022-04-03,Activa,149733.04,9341.86,2022-04-03,2022-04-03
+ACC-00119,Nydia Valencia Pedrero,nicolasa16@example.org,+34 959 28 45 11,Bilbao,Empresas,Medio,PRD-001,2022-11-29,Activa,122098.72,794706.09,2022-11-29,2022-11-29
+ACC-00120,Nadia Marqués Medina,krojas@example.net,+34971570596,Valencia,Retail,Alto,PRD-003,2022-07-04,Inactiva,309855.18,443701.07,2022-07-04,2022-07-04
+ACC-00121,Miguel Barceló-Benavides,gparra@example.net,+34 847029702,Alicante,Empresas,Medio,PRD-004,2022-05-27,Activa,4698.72,1599497.81,2022-05-27,2022-05-27
+ACC-00122,Desiderio Pazos Paredes,mantunez@example.org,+34972557192,Valencia,Retail,Medio,PRD-011,2022-10-22,Inactiva,493825.85,563266.21,2022-10-22,2022-10-22
+ACC-00123,Flavia Puig,florentina43@example.org,+34 732 78 68 14,Bilbao,Pyme,Medio,PRD-012,2023-03-11,Activa,192346.62,940576.53,2023-03-11,2023-03-11
+ACC-00124,Pastor Salmerón-Garmendia,joaquina73@example.org,+34 843 172 715,Zaragoza,Empresas,Alto,PRD-007,2022-08-31,Activa,488972.24,1299371.12,2022-08-31,2022-08-31
+ACC-00125,Olimpia Barón Manrique,renata22@example.com,+34982313237,Madrid,Pyme,Medio,PRD-001,2022-10-09,Activa,115059.2,1593960.51,2022-10-09,2022-10-09
+ACC-00126,Geraldo Peinado Solsona,emmaboix@example.org,+34902678669,Sevilla,Empresas,Alto,PRD-011,2022-08-13,Activa,383735.39,1345752.94,2022-08-13,2022-08-13
+ACC-00127,Bernardino Molins Benavent,rsolano@example.net,+34924289226,Barcelona,Retail,Medio,PRD-011,2022-05-21,Activa,16682.27,697965.53,2022-05-21,2022-05-21
+ACC-00128,Zaida Baquero,villegasezequiel@example.com,+34 848 253 584,Bilbao,Empresas,Alto,PRD-002,2022-05-15,Activa,100397.4,1562351.26,2022-05-15,2022-05-15
+ACC-00129,Edgardo Ferrándiz Llobet,eufemiamateo@example.net,+34 987 182 992,Bilbao,Premium,Medio,PRD-009,2023-01-10,Inactiva,472093.91,1933137.36,2023-01-10,2023-01-10
+ACC-00130,Narciso Nebot Armengol,bertranartemio@example.net,+34 884396907,Zaragoza,Retail,Medio,PRD-012,2022-10-30,Cerrada,70378.51,1931325.43,2022-10-30,2022-10-30
+ACC-00131,Ema del Tomas,noaramis@example.com,+34 973 10 27 67,Zaragoza,Retail,Medio,PRD-009,2023-02-11,Activa,268286.15,882311.36,2023-02-11,2023-02-11
+ACC-00132,Clara Nieto Cobo,rosalva55@example.com,+34 842588153,Málaga,Empresas,Bajo,PRD-010,2022-09-26,Activa,235738.43,1220071.08,2022-09-26,2022-09-26
+ACC-00133,Azucena Lastra Sancho,epifaniocaballero@example.org,+34888 696 325,Sevilla,Retail,Alto,PRD-010,2022-12-02,Inactiva,454693.82,569489.86,2022-12-02,2022-12-02
+ACC-00134,Palmira Milla-Falcó,andreavilla@example.com,+34 981 470 168,Valencia,Retail,Bajo,PRD-002,2023-02-23,Activa,246312.31,149243.6,2023-02-23,2023-02-23
+ACC-00135,Dalila Garrido Osorio,ayusolope@example.com,+34 976480162,Alicante,Empresas,Alto,PRD-007,2022-05-19,Inactiva,348242.0,1057394.62,2022-05-19,2022-05-19
+ACC-00136,Prudencio Paz-Quintana,artemio60@example.net,+34 872584168,Barcelona,Pyme,Alto,PRD-007,2022-06-08,Activa,475760.76,17068.39,2022-06-08,2022-06-08
+ACC-00137,Ramona Losa Carrera,cletoprada@example.com,+34923 85 23 98,Alicante,Pyme,Bajo,PRD-004,2023-01-15,Inactiva,49677.31,1355644.54,2023-01-15,2023-01-15
+ACC-00138,Leyre Arjona Arrieta,cerroleyre@example.com,+34976 87 29 82,Málaga,Empresas,Bajo,PRD-001,2023-01-03,Cerrada,474505.39,1639591.72,2023-01-03,2023-01-03
+ACC-00139,Íngrid Montalbán Cámara,lmartinez@example.com,+34982 887 947,Sevilla,Retail,Bajo,PRD-011,2022-04-04,Activa,121784.45,208143.96,2022-04-04,2022-04-04
+ACC-00140,Gerónimo Muñoz Canals,ymena@example.net,+34739 749 930,Sevilla,Premium,Bajo,PRD-002,2022-07-30,Activa,73777.09,1796088.62,2022-07-30,2022-07-30
+ACC-00141,Julia Donaire-Zamora,rcoloma@example.org,+34 749 13 07 56,Valencia,Premium,Alto,PRD-005,2022-01-03,Activa,87248.56,1305168.17,2022-01-03,2022-01-03
+ACC-00142,Hilario Frías Reguera,tbarrios@example.org,+34984 385 786,Madrid,Empresas,Bajo,PRD-003,2022-01-27,Activa,7890.54,494003.39,2022-01-27,2022-01-27
+ACC-00143,Carmela Segura Noriega,inmaculada49@example.com,+34871348434,Málaga,Retail,Alto,PRD-012,2022-05-10,Activa,224137.61,692179.9,2022-05-10,2022-05-10
+ACC-00144,Pastor Cristóbal Torrijos Molins,joller@example.net,+34885419866,Sevilla,Retail,Alto,PRD-008,2022-04-22,Activa,433490.45,1018974.99,2022-04-22,2022-04-22
+ACC-00145,Reina Coll Manrique,maestrelidia@example.org,+34 925 747 338,Madrid,Retail,Medio,PRD-011,2023-04-15,Inactiva,213136.81,171321.75,2023-04-15,2023-04-15
+ACC-00146,Lisandro Llabrés-Cervantes,herasjose-carlos@example.org,+34986 330 165,Barcelona,Empresas,Alto,PRD-002,2023-03-31,Activa,63095.79,1229850.86,2023-03-31,2023-03-31
+ACC-00147,Armida Cervantes Adadia,santostamarit@example.com,+34 873 454 019,Bilbao,Pyme,Alto,PRD-007,2022-11-29,Activa,49589.23,1388647.81,2022-11-29,2022-11-29
+ACC-00148,Juanito de Díez,cecheverria@example.com,+34980 240 049,Alicante,Premium,Medio,PRD-007,2022-08-09,Activa,226749.45,802778.78,2022-08-09,2022-08-09
+ACC-00149,Ascensión Áurea Naranjo Luís,fzamora@example.org,+34 982 743 152,Málaga,Empresas,Alto,PRD-006,2022-04-08,Activa,476796.26,1357983.12,2022-04-08,2022-04-08
+ACC-00150,Miriam Jimenez Estrada,navasmorena@example.com,+34871 29 66 85,Barcelona,Retail,Bajo,PRD-002,2023-05-01,Activa,372294.48,713926.06,2023-05-01,2023-05-01
+ACC-00151,Herberto Bustos Esteban,albinamorales@example.org,+34 704 637 454,Madrid,Empresas,Alto,PRD-009,2022-05-14,Activa,176799.04,1313948.07,2022-05-14,2022-05-14
+ACC-00152,Paloma Alberdi-Jurado,jimena30@example.net,+34 837426841,Madrid,Empresas,Alto,PRD-012,2023-03-10,Activa,51800.28,990195.72,2023-03-10,2023-03-10
+ACC-00153,Gerónimo Marino Giner Gilabert,alecoronado@example.com,+34936878339,Alicante,Premium,Bajo,PRD-011,2022-06-08,Activa,278132.74,185514.89,2022-06-08,2022-06-08
+ACC-00154,Juan José Salom Álvarez,casemiro91@example.org,+34 982398225,Sevilla,Pyme,Alto,PRD-010,2022-10-13,Cerrada,409213.43,1207825.23,2022-10-13,2022-10-13
+ACC-00155,Isaura Carnero,lilianatorrijos@example.org,+34 983 707 286,Bilbao,Retail,Bajo,PRD-010,2022-01-27,Activa,381204.76,1839151.92,2022-01-27,2022-01-27
+ACC-00156,Marcela Barco Sevilla,loreto06@example.com,+34639 106 518,Valencia,Premium,Alto,PRD-001,2022-12-26,Activa,34792.71,1468986.57,2022-12-26,2022-12-26
+ACC-00157,Victoriano Bayón Suarez,madridsebastian@example.org,+34 843 656 766,Sevilla,Pyme,Medio,PRD-002,2022-02-01,Activa,78704.64,588856.61,2022-02-01,2022-02-01
+ACC-00158,Néstor Cañas Oliveras,escalonabrigida@example.com,+34 986230047,Barcelona,Retail,Bajo,PRD-010,2022-11-29,Activa,308919.09,1331635.86,2022-11-29,2022-11-29
+ACC-00159,Imelda del Gras,edgaroliva@example.org,+34 886 310 690,Málaga,Pyme,Alto,PRD-008,2022-10-06,Activa,136583.42,1497633.44,2022-10-06,2022-10-06
+ACC-00160,Cristian de Cabrero,salomelba@example.net,+34 806306738,Málaga,Retail,Medio,PRD-006,2022-04-27,Activa,296567.13,1030214.92,2022-04-27,2022-04-27
+ACC-00161,René Barbero,anitamancebo@example.org,+34 920 99 53 42,Sevilla,Pyme,Alto,PRD-001,2022-11-12,Activa,102211.56,1887914.38,2022-11-12,2022-11-12
+ACC-00162,Consuela Reyes,leonardo08@example.net,+34849 68 70 56,Bilbao,Empresas,Bajo,PRD-005,2022-05-21,Activa,373507.06,310174.34,2022-05-21,2022-05-21
+ACC-00163,Esther Rico,tcompany@example.com,+34 868 73 34 27,Sevilla,Empresas,Bajo,PRD-009,2023-01-25,Activa,371020.66,844250.17,2023-01-25,2023-01-25
+ACC-00164,Lisandro Rey Riera,romanherrero@example.com,+34873517518,Zaragoza,Pyme,Alto,PRD-002,2023-04-16,Activa,320070.83,543506.17,2023-04-16,2023-04-16
+ACC-00165,Amancio Ledesma,eariza@example.org,+34 876 735 403,Zaragoza,Premium,Alto,PRD-001,2023-02-19,Activa,344805.02,691798.02,2023-02-19,2023-02-19
+ACC-00166,Raimundo Carpio,sherrera@example.net,+34873 63 85 46,Sevilla,Pyme,Alto,PRD-002,2023-03-24,Activa,39323.54,1734575.05,2023-03-24,2023-03-24
+ACC-00167,Luna Palomar Mendez,placido87@example.com,+34825753556,Zaragoza,Premium,Bajo,PRD-004,2022-12-14,Activa,57013.32,995401.73,2022-12-14,2022-12-14
+ACC-00168,Lope Giralt Coello,juliancarolina@example.net,+34 948423536,Valencia,Premium,Bajo,PRD-006,2022-12-24,Activa,98635.9,1184917.92,2022-12-24,2022-12-24
+ACC-00169,Serafina Hoyos-Valera,jose-angel77@example.com,+34848522872,Alicante,Pyme,Alto,PRD-003,2022-03-19,Activa,224452.63,1844516.23,2022-03-19,2022-03-19
+ACC-00170,Miguela de Zamora,benaventeolimpia@example.net,+34 806062312,Zaragoza,Premium,Medio,PRD-011,2022-11-27,Activa,221104.03,570781.89,2022-11-27,2022-11-27
+ACC-00171,César Vega Sarmiento,benito99@example.com,+34 979008860,Madrid,Empresas,Alto,PRD-010,2022-10-09,Activa,230871.24,27094.85,2022-10-09,2022-10-09
+ACC-00172,Juan Manuel Llobet Madrid,vallesodalis@example.net,+34 952 11 82 33,Barcelona,Retail,Alto,PRD-005,2023-01-13,Activa,192241.24,1139675.29,2023-01-13,2023-01-13
+ACC-00173,Lucila Dolores Pablo Lastra,xbermudez@example.com,+34 974 93 34 10,Sevilla,Empresas,Alto,PRD-008,2022-02-12,Activa,75430.54,76841.09,2022-02-12,2022-02-12
+ACC-00174,Hermenegildo Pinilla Pi,obarba@example.org,+34 849176591,Barcelona,Premium,Bajo,PRD-006,2022-04-16,Activa,218879.14,850814.67,2022-04-16,2022-04-16
+ACC-00175,Ágata Arnau,hectortalavera@example.com,+34803 14 89 02,Valencia,Empresas,Medio,PRD-010,2023-06-20,Inactiva,193708.28,1537652.82,2023-06-20,2023-06-20
+ACC-00176,Adriana Galan Cobos,tbenitez@example.org,+34 880 968 562,Zaragoza,Retail,Medio,PRD-011,2022-02-23,Activa,339189.67,532501.3,2022-02-23,2022-02-23
+ACC-00177,Josué Oliva Baeza,ruizjesus@example.org,+34 924 999 650,Barcelona,Premium,Medio,PRD-006,2022-06-03,Activa,328027.36,1307377.07,2022-06-03,2022-06-03
+ACC-00178,Ruben Sanjuan-Trujillo,pelayoperez@example.com,+34869619431,Barcelona,Empresas,Alto,PRD-010,2022-05-13,Activa,395830.98,1617028.81,2022-05-13,2022-05-13
+ACC-00179,Eloy Correa Pinto,manolaporras@example.com,+34927 110 475,Málaga,Empresas,Bajo,PRD-002,2023-06-24,Activa,90131.46,389094.96,2023-06-24,2023-06-24
+ACC-00180,Aurelio Cazorla-Bonet,tomassanchez@example.net,+34 983 61 01 58,Sevilla,Premium,Bajo,PRD-004,2023-05-13,Activa,422214.19,157338.57,2023-05-13,2023-05-13
+ACC-00181,Marc Morata Plaza,manzanaresseveriano@example.com,+34 823 83 98 26,Zaragoza,Premium,Alto,PRD-001,2023-06-24,Activa,81123.61,1654257.37,2023-06-24,2023-06-24
+ACC-00182,Buenaventura Leiva Mascaró,america21@example.org,+34 964647154,Alicante,Retail,Medio,PRD-012,2022-06-19,Activa,359792.84,1937656.64,2022-06-19,2022-06-19
+ACC-00183,Poncio del Ferrán,icampo@example.com,+34 706 596 575,Alicante,Premium,Alto,PRD-012,2022-10-19,Activa,482798.32,1557958.99,2022-10-19,2022-10-19
+ACC-00184,Sabina Cerdán Mas,elisa37@example.com,+34 856547935,Alicante,Pyme,Medio,PRD-006,2022-07-18,Activa,251453.35,808254.69,2022-07-18,2022-07-18
+ACC-00185,Elisa Pozo Patiño,folchdora@example.net,+34858073741,Valencia,Empresas,Bajo,PRD-004,2022-06-15,Activa,437058.47,1086808.53,2022-06-15,2022-06-15
+ACC-00186,Nerea Valera Chaparro,jose-antonio42@example.net,+34 949617979,Barcelona,Empresas,Bajo,PRD-012,2022-04-16,Activa,136395.65,1805877.73,2022-04-16,2022-04-16
+ACC-00187,Luna Velázquez Ripoll,palomaresjudith@example.net,+34823 135 290,Barcelona,Premium,Medio,PRD-007,2022-05-31,Inactiva,465235.96,800538.66,2022-05-31,2022-05-31
+ACC-00188,Mireia Pulido-Mármol,acamacho@example.org,+34 883 388 899,Zaragoza,Premium,Medio,PRD-009,2023-02-10,Cerrada,187456.34,7784.47,2023-02-10,2023-02-10
+ACC-00189,Jacinto del Posada,jvall@example.com,+34 737146112,Zaragoza,Premium,Bajo,PRD-012,2022-04-12,Activa,458698.09,918532.61,2022-04-12,2022-04-12
+ACC-00190,Esperanza Novoa Sarabia,azahartomas@example.com,+34 977177514,Alicante,Pyme,Alto,PRD-012,2022-05-23,Activa,39612.89,474644.05,2022-05-23,2022-05-23
+ACC-00191,Sandalio Cardona Alsina,flora12@example.net,+34880 828 258,Málaga,Retail,Medio,PRD-009,2022-06-03,Activa,60924.17,438800.98,2022-06-03,2022-06-03
+ACC-00192,Joaquina Guardiola Quirós,gilbertorosell@example.com,+34739 37 96 60,Barcelona,Pyme,Alto,PRD-002,2023-04-14,Activa,315977.47,1128847.29,2023-04-14,2023-04-14
+ACC-00193,Cristian Lopez,calnerea@example.net,+34865 53 71 47,Málaga,Retail,Alto,PRD-005,2022-05-28,Activa,285331.86,333993.52,2022-05-28,2022-05-28
+ACC-00194,Micaela Millán,lpoza@example.org,+34 925 57 92 49,Zaragoza,Retail,Alto,PRD-009,2022-03-29,Activa,393206.17,990626.31,2022-03-29,2022-03-29
+ACC-00195,Anselma Cañete-Millán,gomezmarcos@example.org,+34 865286692,Alicante,Retail,Alto,PRD-007,2022-01-21,Activa,186651.19,1481999.01,2022-01-21,2022-01-21
+ACC-00196,Fátima Rocha-Estevez,jduran@example.org,+34979 422 579,Zaragoza,Premium,Alto,PRD-002,2023-01-01,Activa,51831.93,1142901.81,2023-01-01,2023-01-01
+ACC-00197,Toribio Palomar Agustí,mcerezo@example.com,+34 982767677,Madrid,Empresas,Alto,PRD-003,2022-12-07,Activa,321397.81,1652286.5,2022-12-07,2022-12-07
+ACC-00198,Ariel Anguita Giménez,anacleto43@example.net,+34 888279788,Alicante,Premium,Bajo,PRD-012,2023-04-21,Activa,388095.2,888243.13,2023-04-21,2023-04-21
+ACC-00199,Luciano Carbonell Leal,candela07@example.net,+34 876613407,Madrid,Premium,Bajo,PRD-004,2022-10-28,Activa,155037.94,766359.31,2022-10-28,2022-10-28
+ACC-00200,Félix Bonet-Saavedra,galvezhugo@example.net,+34925 96 29 23,Madrid,Premium,Medio,PRD-005,2023-04-30,Activa,390420.78,1724886.47,2023-04-30,2023-04-30
+ACC-00201,Samuel Barranco,berta49@example.net,+34848544948,Barcelona,Empresas,Medio,PRD-005,2022-12-06,Inactiva,371653.85,1784006.86,2022-12-06,2022-12-06
+ACC-00202,Borja Reina Barranco,roxana22@example.org,+34844 53 67 29,Valencia,Pyme,Alto,PRD-006,2023-01-31,Activa,462155.23,1014515.5,2023-01-31,2023-01-31
+ACC-00203,Mauricio Ribas-Perez,obenet@example.org,+34945845775,Málaga,Retail,Medio,PRD-012,2022-03-26,Activa,411170.64,1068222.51,2022-03-26,2022-03-26
+ACC-00204,Abril Buendía-Sedano,remedios18@example.com,+34 876637454,Barcelona,Empresas,Alto,PRD-002,2022-11-25,Activa,222957.88,1421208.97,2022-11-25,2022-11-25
+ACC-00205,Maite Castrillo Toro,tere00@example.org,+34 974 01 27 70,Alicante,Empresas,Medio,PRD-012,2022-06-20,Activa,435018.59,672746.59,2022-06-20,2022-06-20
+ACC-00206,Cintia Catalán Matas,sandralledo@example.org,+34927 415 206,Madrid,Retail,Alto,PRD-005,2023-03-22,Activa,181655.57,1592246.75,2023-03-22,2023-03-22
+ACC-00207,Primitivo Pancho Guillén Román,bustamanteabel@example.org,+34 977 12 93 87,Valencia,Pyme,Bajo,PRD-001,2022-06-13,Activa,117997.69,1272583.9,2022-06-13,2022-06-13
+ACC-00208,Adalberto Nuñez Carreño,ecatalan@example.org,+34 878 611 155,Madrid,Premium,Alto,PRD-007,2023-01-06,Activa,185482.25,860075.54,2023-01-06,2023-01-06
+ACC-00209,Bruno Graciano Cañas Clavero,aguirreemilia@example.net,+34 848 753 269,Valencia,Empresas,Medio,PRD-010,2022-03-20,Activa,139344.88,1919066.11,2022-03-20,2022-03-20
+ACC-00210,Teodora Gaya Bolaños,chavesmarina@example.org,+34942 565 234,Valencia,Pyme,Alto,PRD-012,2022-01-27,Activa,280836.36,486642.19,2022-01-27,2022-01-27
+ACC-00211,Edelmiro López Amor,hernan89@example.net,+34 871640376,Alicante,Premium,Alto,PRD-012,2022-09-24,Activa,458239.45,956960.4,2022-09-24,2022-09-24
+ACC-00212,Dionisio Valero Belda,paniaguamaximiliano@example.org,+34 943 965 827,Barcelona,Pyme,Bajo,PRD-003,2022-05-06,Inactiva,222555.6,129971.02,2022-05-06,2022-05-06
+ACC-00213,Adán Bauzà Alcalá,ildefonso00@example.com,+34 982 48 66 61,Zaragoza,Retail,Alto,PRD-011,2022-11-24,Activa,445665.84,1695292.2,2022-11-24,2022-11-24
+ACC-00214,Lupita de Lobato,menendezcayetano@example.net,+34873285691,Sevilla,Retail,Bajo,PRD-006,2022-06-28,Activa,118368.09,962744.97,2022-06-28,2022-06-28
+ACC-00215,Paco Isaías Gómez Barco,chemarovira@example.org,+34 973 99 04 21,Zaragoza,Pyme,Alto,PRD-009,2023-01-05,Activa,442123.22,84783.62,2023-01-05,2023-01-05
+ACC-00216,Paulino Cervantes Alberdi,anabeloliver@example.net,+34 984425241,Alicante,Pyme,Medio,PRD-012,2023-02-12,Inactiva,36875.36,1943378.45,2023-02-12,2023-02-12
+ACC-00217,Florencio Román Lladó,jodarleticia@example.net,+34 822 778 507,Alicante,Empresas,Bajo,PRD-008,2022-03-17,Inactiva,390131.46,1261577.56,2022-03-17,2022-03-17
+ACC-00218,Carina Pedro-Criado,maria-teresa19@example.net,+34828380003,Málaga,Retail,Bajo,PRD-003,2022-07-06,Activa,152062.27,282032.27,2022-07-06,2022-07-06
+ACC-00219,Jonatan Pascual Piñol,gastonaranda@example.net,+34948 353 654,Bilbao,Retail,Medio,PRD-006,2022-08-19,Activa,478175.81,512624.62,2022-08-19,2022-08-19
+ACC-00220,Lucho Peralta Carreras,escobarjacinto@example.net,+34803 61 74 45,Barcelona,Premium,Alto,PRD-010,2022-11-07,Inactiva,77097.13,1300402.39,2022-11-07,2022-11-07
+ACC-00221,Leonel Saura Aguiló,herberto49@example.com,+34 880 75 97 38,Madrid,Retail,Bajo,PRD-010,2022-12-12,Activa,320726.87,1132381.02,2022-12-12,2022-12-12
+ACC-00222,Carlos de Redondo,guijarrocamila@example.com,+34705 064 138,Málaga,Retail,Medio,PRD-010,2022-08-04,Inactiva,272788.74,1265909.94,2022-08-04,2022-08-04
+ACC-00223,Hugo del Barreda,leonorlosada@example.org,+34 803 38 65 71,Sevilla,Pyme,Medio,PRD-008,2022-11-06,Activa,344306.79,274064.92,2022-11-06,2022-11-06
+ACC-00224,Arcelia Vega-Cañellas,lbenavides@example.net,+34816 234 456,Alicante,Premium,Medio,PRD-008,2023-03-02,Activa,156291.25,1422643.91,2023-03-02,2023-03-02
+ACC-00225,Ester Santamaría Llabrés,carlitofranco@example.org,+34827 212 775,Valencia,Empresas,Alto,PRD-007,2022-12-20,Activa,159557.94,906268.76,2022-12-20,2022-12-20
+ACC-00226,Azeneth Palma Galiano,dmendez@example.com,+34 831 24 90 35,Sevilla,Premium,Bajo,PRD-008,2022-10-01,Activa,472692.45,1721535.89,2022-10-01,2022-10-01
+ACC-00227,Artemio Hurtado Pagès,dvilanova@example.net,+34 901 420 678,Valencia,Empresas,Alto,PRD-004,2023-03-05,Activa,94917.05,276651.94,2023-03-05,2023-03-05
+ACC-00228,Diana de Sevilla,chavesdomingo@example.org,+34813 236 519,Alicante,Empresas,Medio,PRD-008,2023-06-12,Activa,472616.4,986161.15,2023-06-12,2023-06-12
+ACC-00229,Dora Benavides-Almeida,figueroavanesa@example.net,+34971215107,Zaragoza,Retail,Bajo,PRD-004,2022-09-04,Activa,298759.39,1677841.78,2022-09-04,2022-09-04
+ACC-00230,Cesar Rosselló Prat,yandreu@example.net,+34949253244,Madrid,Retail,Medio,PRD-005,2023-04-27,Activa,132236.45,699844.16,2023-04-27,2023-04-27
+ACC-00231,Verónica Comas Aramburu,flormarquez@example.com,+34 947870146,Madrid,Pyme,Bajo,PRD-006,2023-02-17,Activa,97327.65,1084107.0,2023-02-17,2023-02-17
+ACC-00232,Hugo Flores Zaragoza,eva-mariaaliaga@example.com,+34 927787598,Alicante,Empresas,Alto,PRD-007,2022-03-17,Activa,59405.51,1948919.77,2022-03-17,2022-03-17
+ACC-00233,Gala León Escolano,montanaedelmira@example.org,+34 744 078 593,Zaragoza,Empresas,Bajo,PRD-006,2023-02-08,Activa,254561.26,975159.7,2023-02-08,2023-02-08
+ACC-00234,Aureliano Huguet Hernando,bibiana03@example.net,+34 943522395,Valencia,Empresas,Medio,PRD-001,2022-02-16,Activa,74470.33,1780919.97,2022-02-16,2022-02-16
+ACC-00235,Zaira Anaya Ortiz,chusfabra@example.com,+34988 427 010,Zaragoza,Premium,Medio,PRD-006,2022-05-24,Cerrada,369659.68,563430.4,2022-05-24,2022-05-24
+ACC-00236,Marcial de Aller,vabascal@example.net,+34 873 25 25 00,Alicante,Empresas,Medio,PRD-009,2022-12-11,Inactiva,184178.9,1331303.1,2022-12-11,2022-12-11
+ACC-00237,Lázaro Cifuentes Cantero,camilo56@example.net,+34 826545226,Bilbao,Retail,Alto,PRD-010,2023-03-03,Activa,483535.35,1554953.18,2023-03-03,2023-03-03
+ACC-00238,Mirta Molins Dávila,jacinto92@example.com,+34 902 42 20 96,Madrid,Pyme,Bajo,PRD-012,2022-08-22,Activa,360591.42,1537942.57,2022-08-22,2022-08-22
+ACC-00239,Alejandra Espada-Monreal,felicianacalvet@example.com,+34 844 513 552,Sevilla,Retail,Alto,PRD-003,2023-01-25,Inactiva,54947.76,-11178.4,2023-01-25,2023-01-25
+ACC-00240,Segismundo Narváez Salom,larahugo@example.org,+34820 541 006,Valencia,Pyme,Alto,PRD-007,2022-11-18,Activa,250909.75,1203530.02,2022-11-18,2022-11-18
+ACC-00241,Paula Rivas Delgado,yurena@example.com,+34 941 179 327,Madrid,Premium,Alto,PRD-012,2023-04-28,Activa,162524.77,1307564.94,2023-04-28,2023-04-28
+ACC-00242,Salomón Aragonés Mariño,montalbanjuan-carlos@example.org,+34821 526 218,Zaragoza,Premium,Medio,PRD-007,2023-06-23,Inactiva,171163.51,676288.33,2023-06-23,2023-06-23
+ACC-00243,Fortunato Tolosa Anguita,mcozar@example.com,+34846015336,Alicante,Premium,Bajo,PRD-010,2022-09-28,Activa,149249.58,1880045.37,2022-09-28,2022-09-28
+ACC-00244,Palmira del Lucena,jordan10@example.com,+34979205061,Sevilla,Pyme,Medio,PRD-005,2022-11-01,Activa,280243.8,1865695.05,2022-11-01,2022-11-01
+ACC-00245,Sergio Natalio Tenorio Flores,amigohilario@example.org,+34888171467,Barcelona,Pyme,Medio,PRD-005,2022-10-08,Inactiva,477304.43,1599462.46,2022-10-08,2022-10-08
+ACC-00246,Visitación Landa Bou,xesteban@example.com,+34 932 704 774,Bilbao,Retail,Medio,PRD-001,2022-10-25,Inactiva,327986.03,1482043.92,2022-10-25,2022-10-25
+ACC-00247,Silvio del Barrio,marinacaballero@example.org,+34924869380,Bilbao,Empresas,Bajo,PRD-004,2022-08-08,Activa,370445.49,440528.24,2022-08-08,2022-08-08
+ACC-00248,Salud Yáñez Riquelme,egutierrez@example.com,+34 822 60 89 89,Sevilla,Premium,Bajo,PRD-011,2022-02-21,Activa,165146.81,918428.01,2022-02-21,2022-02-21
+ACC-00249,Brunilda Azeneth Sanchez Duran,hectorfernandez@example.org,+34 803616329,Valencia,Pyme,Alto,PRD-001,2022-05-21,Inactiva,439199.81,928769.47,2022-05-21,2022-05-21
+ACC-00250,Feliciano Bautista-Bonet,jpuerta@example.com,+34 886 870 998,Zaragoza,Empresas,Alto,PRD-005,2022-07-24,Activa,384362.5,1287212.4,2022-07-24,2022-07-24
+ACC-00251,Aurelia Ribas Conde,claudiacabrera@example.org,+34 826485646,Madrid,Premium,Medio,PRD-009,2022-08-26,Inactiva,87894.35,1835251.36,2022-08-26,2022-08-26
+ACC-00252,Marianela Suárez Arcos,leoncioquintana@example.org,+34945 065 307,Valencia,Empresas,Bajo,PRD-008,2023-02-11,Activa,283980.93,169966.42,2023-02-11,2023-02-11
+ACC-00253,Vidal Perales-Almagro,olimpia44@example.com,+34979 13 24 75,Alicante,Pyme,Bajo,PRD-005,2022-12-10,Inactiva,234010.38,345263.37,2022-12-10,2022-12-10
+ACC-00254,Pánfilo Riera-Borrell,vascogalvan@example.com,+34978850821,Valencia,Pyme,Alto,PRD-006,2022-04-26,Activa,93099.53,1460066.69,2022-04-26,2022-04-26
+ACC-00255,Pedro José Luis Quintanilla Cerdá,duranguadalupe@example.org,+34807 30 70 53,Sevilla,Premium,Alto,PRD-010,2022-10-30,Inactiva,448521.38,1645329.14,2022-10-30,2022-10-30
+ACC-00256,Gerónimo Simó-Vazquez,rcasals@example.org,+34 880579727,Barcelona,Pyme,Alto,PRD-006,2023-06-12,Activa,490842.6,928780.9,2023-06-12,2023-06-12
+ACC-00257,Mamen Olmo-Ocaña,pilarjordan@example.net,+34 824 40 60 29,Bilbao,Pyme,Bajo,PRD-001,2022-09-12,Activa,133497.16,625731.87,2022-09-12,2022-09-12
+ACC-00258,Tiburcio Giralt,inesgabaldon@example.com,+34946 80 07 22,Zaragoza,Premium,Bajo,PRD-005,2022-01-12,Activa,232697.5,277419.49,2022-01-12,2022-01-12
+ACC-00259,Rosario Adelia Goicoechea Iniesta,leticia46@example.com,+34925 743 748,Bilbao,Retail,Alto,PRD-012,2023-05-30,Inactiva,147518.8,1209982.17,2023-05-30,2023-05-30
+ACC-00260,Gisela Marisol Calatayud Aguilera,chelo99@example.com,+34900 17 15 45,Alicante,Premium,Medio,PRD-003,2022-08-13,Activa,302869.47,802483.51,2022-08-13,2022-08-13
+ACC-00261,Eladio Martín-Fabra,asuncionhernandez@example.org,+34945 52 07 44,Sevilla,Premium,Alto,PRD-009,2023-04-28,Activa,436567.53,117834.13,2023-04-28,2023-04-28
+ACC-00262,Graciela Pont Aranda,olegariogiron@example.net,+34 987758428,Zaragoza,Retail,Alto,PRD-009,2023-04-03,Activa,414387.03,1800920.73,2023-04-03,2023-04-03
+ACC-00263,Eugenio Cabanillas Sotelo,manujordan@example.net,+34 865135346,Valencia,Premium,Medio,PRD-010,2022-07-27,Inactiva,220920.28,1344605.24,2022-07-27,2022-07-27
+ACC-00264,Florencia Juliá Mariscal,ecarranza@example.org,+34 821 738 168,Alicante,Retail,Medio,PRD-002,2023-05-16,Activa,207712.29,1106017.93,2023-05-16,2023-05-16
+ACC-00265,Hilario Amando Contreras Cervantes,octaviorecio@example.net,+34 974 252 175,Bilbao,Retail,Medio,PRD-011,2023-04-19,Activa,1507.74,396697.68,2023-04-19,2023-04-19
+ACC-00266,Faustino Barco Acuña,nllanos@example.org,+34 847 712 966,Málaga,Empresas,Alto,PRD-001,2022-03-16,Activa,497061.83,1865894.74,2022-03-16,2022-03-16
+ACC-00267,Inés Tejada Pla,arellanobibiana@example.org,+34930583003,Madrid,Empresas,Medio,PRD-008,2022-03-12,Activa,67714.43,1265126.25,2022-03-12,2022-03-12
+ACC-00268,Ovidio del Miguel,cristianpla@example.net,+34 902210447,Málaga,Pyme,Medio,PRD-006,2023-03-07,Activa,341365.18,1306674.7,2023-03-07,2023-03-07
+ACC-00269,María Zamora,tono25@example.com,+34 927326033,Zaragoza,Retail,Bajo,PRD-011,2022-05-17,Cerrada,196529.32,211061.53,2022-05-17,2022-05-17
+ACC-00270,Curro Almeida Vargas,duiliopazos@example.net,+34 800 64 89 09,Madrid,Empresas,Medio,PRD-001,2022-08-17,Activa,272222.67,1040463.9,2022-08-17,2022-08-17
+ACC-00271,Natalio Campoy Aller,carmonasigfrido@example.com,+34941 18 47 23,Alicante,Empresas,Bajo,PRD-004,2022-08-24,Activa,468705.18,1436299.09,2022-08-24,2022-08-24
+ACC-00272,Eutropio Rivero Cabrero,esther92@example.com,+34826 89 14 11,Málaga,Retail,Bajo,PRD-001,2022-04-26,Activa,50448.36,18831.37,2022-04-26,2022-04-26
+ACC-00273,Chita Folch Jódar,pepitoredondo@example.com,+34 847 08 73 75,Madrid,Pyme,Medio,PRD-004,2022-02-19,Activa,108634.61,1720647.0,2022-02-19,2022-02-19
+ACC-00274,Abel de Borrell,uribeeustaquio@example.org,+34 983114374,Bilbao,Premium,Alto,PRD-003,2022-02-27,Activa,288737.41,1533703.34,2022-02-27,2022-02-27
+ACC-00275,Jesús Ayllón-Cabo,sandraariza@example.com,+34 927 56 11 00,Bilbao,Premium,Alto,PRD-004,2022-11-25,Activa,206780.1,514065.54,2022-11-25,2022-11-25
+ACC-00276,Natanael Donaire Mulet,tere79@example.com,+34824 55 21 66,Málaga,Pyme,Bajo,PRD-011,2022-06-29,Cerrada,470793.2,1326252.18,2022-06-29,2022-06-29
+ACC-00277,Elena Pol Tejera,hdiaz@example.org,+34 812 169 797,Málaga,Pyme,Bajo,PRD-006,2023-06-22,Activa,91939.49,1052752.94,2023-06-22,2023-06-22
+ACC-00278,Marcos Pino Palmer,castrilloalmudena@example.com,+34 828670145,Bilbao,Premium,Medio,PRD-004,2022-09-04,Inactiva,281192.97,1933961.69,2022-09-04,2022-09-04
+ACC-00279,Pastor Zamorano Goicoechea,aurelia89@example.org,+34953 75 62 89,Málaga,Premium,Medio,PRD-003,2023-06-27,Activa,323352.93,1840563.51,2023-06-27,2023-06-27
+ACC-00280,Adelardo Crespo Vega,kvalcarcel@example.org,+34979 53 54 08,Sevilla,Retail,Medio,PRD-002,2023-01-15,Activa,302484.72,31072.49,2023-01-15,2023-01-15
+ACC-00281,Leonardo del Quintana,cayetanosegovia@example.com,+34 972 17 75 17,Sevilla,Pyme,Bajo,PRD-004,2022-03-16,Inactiva,166482.16,1911890.51,2022-03-16,2022-03-16
+ACC-00282,Aurelio Quintanilla Revilla,abadpaola@example.org,+34901 88 37 55,Sevilla,Retail,Alto,PRD-004,2022-01-16,Cerrada,239460.44,447316.02,2022-01-16,2022-01-16
+ACC-00283,Sebastian Gisbert Santos,charo99@example.com,+34 928 711 305,Sevilla,Empresas,Medio,PRD-007,2022-07-29,Activa,266825.06,686482.09,2022-07-29,2022-07-29
+ACC-00284,Saturnina Manzanares Yuste,judith10@example.org,+34 980 261 493,Alicante,Pyme,Bajo,PRD-006,2022-09-25,Inactiva,361206.79,1511339.39,2022-09-25,2022-09-25
+ACC-00285,Benito Pozo,zacariasfarre@example.net,+34923160917,Zaragoza,Empresas,Medio,PRD-004,2022-11-24,Activa,432042.42,1469567.38,2022-11-24,2022-11-24
+ACC-00286,Mónica Varela Cañizares,hacosta@example.net,+34 806869782,Málaga,Empresas,Bajo,PRD-005,2022-01-17,Activa,115009.31,1118068.5,2022-01-17,2022-01-17
+ACC-00287,Carmela Castellanos-Calleja,gmontserrat@example.com,+34 948 93 46 54,Zaragoza,Empresas,Medio,PRD-008,2022-09-09,Cerrada,320847.23,955720.94,2022-09-09,2022-09-09
+ACC-00288,Rosenda Cañellas Cervera,tvila@example.net,+34918 333 945,Zaragoza,Premium,Bajo,PRD-012,2022-06-22,Activa,244158.16,1829643.75,2022-06-22,2022-06-22
+ACC-00289,Pedro Enríquez Vara,leocadia15@example.net,+34977 99 68 46,Madrid,Retail,Alto,PRD-009,2022-03-02,Activa,3191.91,231857.64,2022-03-02,2022-03-02
+ACC-00290,Juan Carlos Campillo Amaya,dcodina@example.net,+34807 342 442,Valencia,Retail,Bajo,PRD-002,2022-08-25,Activa,186600.35,1216562.23,2022-08-25,2022-08-25
+ACC-00291,Onofre Marquez Frías,palmerodalys@example.com,+34 826 98 38 63,Alicante,Retail,Bajo,PRD-011,2023-05-10,Activa,205669.25,-15711.4,2023-05-10,2023-05-10
+ACC-00292,Rita Maestre,pizarroroldan@example.com,+34 918 00 43 97,Bilbao,Retail,Alto,PRD-009,2022-10-09,Inactiva,337016.48,1602643.78,2022-10-09,2022-10-09
+ACC-00293,Xavier del Ferrándiz,macariosanchez@example.org,+34821228160,Barcelona,Premium,Bajo,PRD-002,2022-07-03,Activa,263227.99,1621189.5,2022-07-03,2022-07-03
+ACC-00294,Eligia Lamas Castillo,danielajara@example.org,+34 922 72 02 59,Barcelona,Empresas,Medio,PRD-007,2022-10-01,Activa,121603.95,1379334.45,2022-10-01,2022-10-01
+ACC-00295,Roldán Mascaró Trujillo,camilo58@example.org,+34 868 18 26 88,Barcelona,Retail,Bajo,PRD-011,2022-11-04,Activa,188584.78,925810.46,2022-11-04,2022-11-04
+ACC-00296,Araceli Olmedo Giralt,graciamarmol@example.com,+34927 439 878,Valencia,Retail,Medio,PRD-012,2022-01-10,Inactiva,322453.62,629104.76,2022-01-10,2022-01-10
+ACC-00297,Baudelio Oliva Salinas,veronicahervas@example.org,+34920616484,Madrid,Premium,Bajo,PRD-009,2022-04-08,Inactiva,346143.86,1111907.5,2022-04-08,2022-04-08
+ACC-00298,Xavier Villanueva Perera,ctorrecilla@example.com,+34871 58 11 28,Barcelona,Empresas,Alto,PRD-001,2022-10-05,Activa,16450.89,1853971.04,2022-10-05,2022-10-05
+ACC-00299,Adelaida de Galvez,rosaurarodrigo@example.org,+34 874 861 207,Sevilla,Premium,Alto,PRD-001,2022-11-19,Inactiva,464437.47,563517.62,2022-11-19,2022-11-19
+ACC-00300,Alma Bonilla Beltrán,enriqueznarcisa@example.com,+34 821 934 667,Málaga,Empresas,Medio,PRD-010,2022-09-04,Activa,69975.3,1976379.81,2022-09-04,2022-09-04
+ACC-00301,Iris Molina Alegria,icarrasco@example.org,+34819015814,Zaragoza,Retail,Bajo,PRD-009,2022-03-22,Activa,419337.33,648215.13,2022-03-22,2022-03-22
+ACC-00302,Marcio Armando Lucena Río,qprats@example.org,+34976 28 32 68,Madrid,Empresas,Medio,PRD-006,2023-02-11,Activa,177905.6,1879342.83,2023-02-11,2023-02-11
+ACC-00303,Maximiliano Calixto Martí Perea,cidduilio@example.org,+34699 68 81 43,Málaga,Retail,Alto,PRD-003,2023-03-19,Activa,123224.89,100688.7,2023-03-19,2023-03-19
+ACC-00304,Cloe Rey Vila,felipeespejo@example.org,+34 882 312 908,Málaga,Premium,Alto,PRD-003,2022-10-02,Activa,180350.11,137616.88,2022-10-02,2022-10-02
+ACC-00305,Mireia Beltran Manso,iglesiaclimaco@example.org,+34 979 552 314,Zaragoza,Empresas,Bajo,PRD-008,2022-11-12,Activa,93695.89,870129.54,2022-11-12,2022-11-12
+ACC-00306,Anastasia Ximena Ferrer Moll,vsanjuan@example.net,+34 902929955,Barcelona,Retail,Bajo,PRD-007,2023-06-09,Activa,46532.13,1175989.79,2023-06-09,2023-06-09
+ACC-00307,Carla Acuña Millán,mireiagiralt@example.net,+34 964 52 57 77,Madrid,Empresas,Medio,PRD-007,2022-11-29,Activa,42349.76,1797328.89,2022-11-29,2022-11-29
+ACC-00308,Remedios Mayoral Torrens,echevarriaflavia@example.net,+34822 42 83 41,Valencia,Pyme,Bajo,PRD-010,2022-09-06,Activa,150565.63,960904.08,2022-09-06,2022-09-06
+ACC-00309,Victor Manuel Alfonso Vendrell,quirosmaria-jose@example.net,+34 875084887,Málaga,Empresas,Medio,PRD-003,2022-03-06,Activa,391333.31,690306.07,2022-03-06,2022-03-06
+ACC-00310,Gervasio Poza Godoy,eloy78@example.net,+34 824 65 80 39,Alicante,Premium,Medio,PRD-012,2022-09-10,Activa,152329.0,1895088.1,2022-09-10,2022-09-10
+ACC-00311,Reyes Vilaplana Checa,lcuervo@example.net,+34844 75 03 73,Málaga,Empresas,Medio,PRD-010,2022-12-07,Activa,407737.74,1711992.36,2022-12-07,2022-12-07
+ACC-00312,Eligio Peiró Guillén,gabaldonaura@example.com,+34 943770051,Zaragoza,Premium,Medio,PRD-005,2022-05-20,Activa,482287.31,1935886.7,2022-05-20,2022-05-20
+ACC-00313,Melisa Llanos,cristina89@example.org,+34 941659184,Alicante,Premium,Medio,PRD-012,2022-10-26,Activa,408247.26,755517.02,2022-10-26,2022-10-26
+ACC-00314,Yésica Gisbert Villalonga,wosorio@example.com,+34 978908272,Sevilla,Premium,Alto,PRD-010,2022-04-27,Activa,13458.05,1440787.4,2022-04-27,2022-04-27
+ACC-00315,Antonio del Galán,glaucocriado@example.com,+34 833651777,Bilbao,Retail,Medio,PRD-008,2022-08-03,Activa,69589.56,570806.92,2022-08-03,2022-08-03
+ACC-00316,Manolo Cuéllar,palonso@example.org,+34841992280,Valencia,Pyme,Medio,PRD-011,2022-09-16,Activa,495350.31,932431.13,2022-09-16,2022-09-16
+ACC-00317,Brunilda Barba-Delgado,agata28@example.com,+34 724137977,Málaga,Retail,Medio,PRD-009,2023-02-15,Activa,406148.49,1167330.88,2023-02-15,2023-02-15
+ACC-00318,Damián Reig Clavero,estrellavicente@example.com,+34848 579 913,Sevilla,Empresas,Bajo,PRD-002,2022-03-29,Activa,22148.35,1966396.82,2022-03-29,2022-03-29
+ACC-00319,Gabriela Catalán Camps,franciscoazeneth@example.net,+34948 291 279,Málaga,Retail,Bajo,PRD-006,2023-02-14,Activa,111000.54,1481048.71,2023-02-14,2023-02-14
+ACC-00320,Alma Valeria Vaquero Carpio,toledogeorgina@example.org,+34 988 068 650,Zaragoza,Pyme,Medio,PRD-008,2022-08-15,Activa,294294.98,975954.85,2022-08-15,2022-08-15
+ACC-00321,Inés Grande,wpiquer@example.net,+34825624731,Alicante,Retail,Medio,PRD-001,2022-12-20,Activa,480863.93,187942.14,2022-12-20,2022-12-20
+ACC-00322,Marcelino Urbano Real Jiménez,adelardoaguilar@example.net,+34 985180635,Bilbao,Empresas,Medio,PRD-006,2022-05-26,Activa,260557.41,664015.61,2022-05-26,2022-05-26
+ACC-00323,Fidela Campillo Cortes,qizaguirre@example.net,+34 949959463,Alicante,Empresas,Bajo,PRD-008,2022-04-10,Activa,405092.97,185924.8,2022-04-10,2022-04-10
+ACC-00324,Mamen Tolosa Escamilla,celia87@example.com,+34 902 95 62 13,Barcelona,Premium,Alto,PRD-011,2022-12-18,Activa,87226.62,278278.21,2022-12-18,2022-12-18
+ACC-00325,Ricarda Cáceres Cabrera,apoloniaperez@example.com,+34806 26 01 27,Sevilla,Pyme,Alto,PRD-008,2023-03-13,Activa,320239.44,835875.63,2023-03-13,2023-03-13
+ACC-00326,Irma Anunciación Baró Jódar,raimundobernal@example.net,+34 800 66 98 49,Sevilla,Pyme,Alto,PRD-012,2022-01-30,Activa,2225.02,390332.02,2022-01-30,2022-01-30
+ACC-00327,Roldán Díez Urrutia,malarcon@example.net,+34 984 43 09 88,Barcelona,Retail,Alto,PRD-012,2022-10-13,Activa,162992.46,887978.37,2022-10-13,2022-10-13
+ACC-00328,Marino de Araujo,jorge02@example.org,+34 886 656 693,Alicante,Empresas,Alto,PRD-011,2022-09-26,Activa,196272.0,184175.75,2022-09-26,2022-09-26
+ACC-00329,Adoración Bayona,luislucila@example.net,+34 925 54 39 37,Valencia,Empresas,Alto,PRD-008,2022-12-27,Activa,336055.04,592030.78,2022-12-27,2022-12-27
+ACC-00330,Maricela Acuña Julián,santosvelasco@example.org,+34 821 84 51 84,Barcelona,Premium,Medio,PRD-005,2022-09-02,Activa,255412.43,807390.17,2022-09-02,2022-09-02
+ACC-00331,Ruth del Salas,xtomas@example.org,+34923 77 90 71,Málaga,Pyme,Bajo,PRD-010,2022-05-22,Activa,268689.63,1834280.04,2022-05-22,2022-05-22
+ACC-00332,Anastasio Piñeiro-Giménez,nereidamoles@example.com,+34 926880434,Valencia,Pyme,Medio,PRD-009,2022-06-27,Activa,157290.01,874551.99,2022-06-27,2022-06-27
+ACC-00333,Heraclio Nogués Benitez,albamir@example.com,+34 876942373,Madrid,Pyme,Bajo,PRD-006,2022-02-24,Activa,191972.09,1101243.26,2022-02-24,2022-02-24
+ACC-00334,Quirino de Lara,jenarofranco@example.org,+34926211179,Alicante,Pyme,Alto,PRD-007,2023-05-22,Inactiva,244349.76,119474.78,2023-05-22,2023-05-22
+ACC-00335,Roberto Arnal Toledo,estela57@example.net,+34885 72 84 63,Bilbao,Retail,Medio,PRD-004,2022-02-01,Activa,144335.16,1550517.4,2022-02-01,2022-02-01
+ACC-00336,Belen Balaguer-Zaragoza,itejera@example.org,+34981562718,Barcelona,Retail,Medio,PRD-009,2023-05-23,Activa,411641.4,702066.63,2023-05-23,2023-05-23
+ACC-00337,Estela Aguirre Albero,reynaldocabrero@example.com,+34927942843,Alicante,Premium,Medio,PRD-012,2022-02-12,Activa,415035.36,1490258.26,2022-02-12,2022-02-12
+ACC-00338,Jonatan Novoa-Paz,andrearodrigo@example.org,+34948 556 472,Alicante,Empresas,Medio,PRD-001,2022-11-01,Inactiva,43491.5,1723845.46,2022-11-01,2022-11-01
+ACC-00339,Benigna Granados-Cabo,nilda38@example.com,+34 942 322 702,Sevilla,Empresas,Alto,PRD-004,2022-05-01,Activa,214083.53,1213109.96,2022-05-01,2022-05-01
+ACC-00340,Leticia Cañizares Villanueva,mireia74@example.com,+34 806 612 034,Madrid,Empresas,Alto,PRD-004,2022-07-31,Activa,269384.27,613489.91,2022-07-31,2022-07-31
+ACC-00341,Sofía Bárcena Sandoval,juan-bautista55@example.net,+34882 50 61 59,Bilbao,Retail,Bajo,PRD-005,2022-10-27,Cerrada,392845.52,1833475.86,2022-10-27,2022-10-27
+ACC-00342,Luis Díaz,pedro58@example.com,+34 972169472,Valencia,Premium,Bajo,PRD-011,2022-10-11,Activa,161048.36,457487.22,2022-10-11,2022-10-11
+ACC-00343,Miguel Navas Robles,fbellido@example.org,+34924 355 449,Valencia,Empresas,Alto,PRD-008,2023-02-07,Activa,225995.86,1248936.91,2023-02-07,2023-02-07
+ACC-00344,Elba Salgado Parejo,kriba@example.org,+34722 34 13 26,Bilbao,Empresas,Medio,PRD-007,2022-04-06,Cerrada,163644.64,-44930.18,2022-04-06,2022-04-06
+ACC-00345,Asdrubal Bartolomé Sáenz,amomaria-manuela@example.com,+34 985 11 49 21,Alicante,Empresas,Bajo,PRD-012,2022-04-06,Activa,198857.93,1934663.59,2022-04-06,2022-04-06
+ACC-00346,Esmeralda Grande Huertas,venceslas22@example.net,+34 849 005 577,Bilbao,Empresas,Medio,PRD-008,2022-08-05,Activa,288966.82,1110591.33,2022-08-05,2022-08-05
+ACC-00347,Elena del Cepeda,domitilasaura@example.net,+34 968845783,Madrid,Retail,Bajo,PRD-006,2023-05-12,Activa,418351.09,-16623.23,2023-05-12,2023-05-12
+ACC-00348,Ismael Mena Paz,jjuan@example.com,+34700825478,Alicante,Retail,Medio,PRD-008,2022-06-11,Activa,344295.94,220421.83,2022-06-11,2022-06-11
+ACC-00349,Omar Téllez Tejada,agapito64@example.net,+34 878 08 53 68,Bilbao,Retail,Alto,PRD-003,2022-11-06,Activa,41210.27,1312243.06,2022-11-06,2022-11-06
+ACC-00350,Gertrudis Iborra Cárdenas,opineda@example.com,+34822 638 944,Málaga,Empresas,Alto,PRD-001,2022-06-19,Activa,117071.92,1293744.72,2022-06-19,2022-06-19
+ACC-00351,Rufina del Rey,reynabayona@example.org,+34 843417974,Sevilla,Pyme,Bajo,PRD-001,2022-04-08,Activa,113095.43,1343964.59,2022-04-08,2022-04-08
+ACC-00352,Leandra Cecilia Montes Aliaga,augustoalonso@example.org,+34 826 44 27 03,Zaragoza,Retail,Medio,PRD-001,2022-01-10,Activa,238850.12,419341.08,2022-01-10,2022-01-10
+ACC-00353,Carlos Alcolea Uriarte,octaviorivera@example.com,+34 981 570 512,Barcelona,Retail,Medio,PRD-012,2022-04-02,Activa,149627.66,734578.15,2022-04-02,2022-04-02
+ACC-00354,Eliseo Poza Bellido,mescudero@example.com,+34 942 013 673,Valencia,Retail,Alto,PRD-011,2022-05-17,Activa,305159.62,286438.93,2022-05-17,2022-05-17
+ACC-00355,Conrado Serna Burgos,ainaraporcel@example.net,+34 915208814,Sevilla,Premium,Medio,PRD-012,2022-12-26,Activa,221191.93,395351.59,2022-12-26,2022-12-26
+ACC-00356,Merche Martín Fiol,susana03@example.org,+34 879650249,Barcelona,Pyme,Medio,PRD-003,2022-04-13,Cerrada,157251.83,236651.89,2022-04-13,2022-04-13
+ACC-00357,Hector Herrero Agullo,talaverajaviera@example.net,+34 846 51 32 71,Barcelona,Premium,Alto,PRD-011,2022-10-11,Activa,360589.82,534087.66,2022-10-11,2022-10-11
+ACC-00358,Evelia Íngrid Barreda Barreda,filomena28@example.org,+34 841 73 58 57,Bilbao,Premium,Alto,PRD-011,2022-01-28,Activa,94323.26,753089.58,2022-01-28,2022-01-28
+ACC-00359,Agustín Pina,lourdes24@example.org,+34978784873,Alicante,Pyme,Bajo,PRD-004,2022-02-25,Activa,319041.16,95574.6,2022-02-25,2022-02-25
+ACC-00360,Cayetana Oliveras-Morales,mllopis@example.net,+34 847 18 27 44,Zaragoza,Premium,Medio,PRD-006,2022-01-13,Inactiva,284190.19,699095.55,2022-01-13,2022-01-13
+ACC-00361,Flavia del Abascal,besteve@example.net,+34 928 935 186,Barcelona,Retail,Alto,PRD-008,2022-06-26,Activa,131092.64,31645.07,2022-06-26,2022-06-26
+ACC-00362,Juan Francisco Valencia,emperatrizluna@example.com,+34946 51 18 10,Bilbao,Pyme,Medio,PRD-007,2022-03-03,Activa,41213.91,1049957.87,2022-03-03,2022-03-03
+ACC-00363,Chuy Angulo Franch,torralbagregorio@example.org,+34 749 67 89 94,Barcelona,Empresas,Bajo,PRD-005,2022-06-06,Activa,101598.75,1606523.17,2022-06-06,2022-06-06
+ACC-00364,Gervasio Giner Belda,gallardogabriela@example.com,+34822 705 865,Barcelona,Empresas,Alto,PRD-007,2022-12-01,Activa,476713.99,439206.65,2022-12-01,2022-12-01
+ACC-00365,Sergio Larrañaga Ángel,bejaranoperlita@example.com,+34 822381138,Málaga,Retail,Medio,PRD-002,2022-09-08,Activa,27514.31,1315463.14,2022-09-08,2022-09-08
+ACC-00366,Celestina Ferrando Zorrilla,clotildeescamilla@example.net,+34947 19 57 61,Madrid,Premium,Alto,PRD-002,2022-06-29,Activa,248206.47,660745.51,2022-06-29,2022-06-29
+ACC-00367,Ruy Escribano Querol,gema28@example.net,+34971 558 556,Bilbao,Premium,Medio,PRD-012,2023-06-14,Activa,390561.99,500967.2,2023-06-14,2023-06-14
+ACC-00368,Sara Morales Hernandez,remigioizquierdo@example.com,+34 973760049,Zaragoza,Pyme,Medio,PRD-001,2022-05-01,Activa,131474.83,1948853.7,2022-05-01,2022-05-01
+ACC-00369,Juan Antonio Cepeda Matas,masivan@example.org,+34910488899,Alicante,Empresas,Bajo,PRD-008,2022-03-20,Activa,283443.06,703759.94,2022-03-20,2022-03-20
+ACC-00370,Asdrubal Arellano Seguí,fabricio24@example.com,+34881 344 196,Barcelona,Premium,Alto,PRD-002,2022-09-19,Activa,22018.95,1719003.41,2022-09-19,2022-09-19
+ACC-00371,África Gelabert-Berenguer,monica72@example.com,+34 825940961,Alicante,Empresas,Medio,PRD-001,2022-09-08,Inactiva,89480.47,1918701.4,2022-09-08,2022-09-08
+ACC-00372,Édgar Múñiz Oliveras,hriera@example.org,+34706 04 80 58,Málaga,Premium,Medio,PRD-009,2022-02-06,Activa,457927.38,605867.03,2022-02-06,2022-02-06
+ACC-00373,Brígida Morillo-Vallés,ezequielayuso@example.net,+34 944 799 813,Zaragoza,Retail,Alto,PRD-010,2022-03-21,Activa,26336.07,407529.37,2022-03-21,2022-03-21
+ACC-00374,Ema Prado Colomer,nicodemoblanch@example.com,+34 806 86 41 68,Málaga,Retail,Medio,PRD-001,2023-06-13,Inactiva,386763.74,586930.44,2023-06-13,2023-06-13
+ACC-00375,Remedios Castrillo Cepeda,ffiguerola@example.com,+34 872 89 83 31,Alicante,Retail,Medio,PRD-009,2022-03-30,Activa,281903.37,573014.08,2022-03-30,2022-03-30
+ACC-00376,Román Ropero-Morales,capdevilahilda@example.com,+34 949553559,Zaragoza,Pyme,Bajo,PRD-008,2022-09-06,Activa,273279.62,1581745.76,2022-09-06,2022-09-06
+ACC-00377,Rogelio Mayol Dominguez,encarnita79@example.org,+34 971033521,Málaga,Retail,Bajo,PRD-001,2022-06-04,Activa,317970.92,1371594.65,2022-06-04,2022-06-04
+ACC-00378,Rafael Ballester Herrero,rupertamaestre@example.org,+34924 147 705,Madrid,Pyme,Alto,PRD-006,2022-01-10,Activa,51974.51,1036119.7,2022-01-10,2022-01-10
+ACC-00379,Rafael Galán,carinazabala@example.com,+34 978 92 06 98,Alicante,Retail,Bajo,PRD-007,2022-09-01,Activa,46513.32,1838612.53,2022-09-01,2022-09-01
+ACC-00380,Edu Domínguez Barrena,herberto94@example.org,+34 975 01 64 51,Zaragoza,Pyme,Alto,PRD-007,2023-06-17,Activa,47788.5,223703.39,2023-06-17,2023-06-17
+ACC-00381,Esteban Pomares Guardia,tverdugo@example.org,+34917 98 12 38,Madrid,Pyme,Alto,PRD-002,2023-02-08,Cerrada,118385.87,485031.42,2023-02-08,2023-02-08
+ACC-00382,Mar Almeida Ariño,agataavila@example.com,+34922 76 20 55,Zaragoza,Empresas,Medio,PRD-007,2022-11-19,Activa,37343.72,365560.88,2022-11-19,2022-11-19
+ACC-00383,Maura Mate Guzman,octavia04@example.com,+34 748 432 562,Barcelona,Premium,Medio,PRD-003,2022-04-22,Activa,203256.28,1048645.33,2022-04-22,2022-04-22
+ACC-00384,Pánfilo Piña Viñas,silvestrehernandez@example.net,+34 846 649 578,Bilbao,Pyme,Medio,PRD-008,2022-08-01,Inactiva,45210.44,1605573.65,2022-08-01,2022-08-01
+ACC-00385,Cristian Chacón Francisco,martinzabaleta@example.org,+34 952 92 51 88,Madrid,Premium,Medio,PRD-012,2022-11-08,Activa,355578.7,1935220.01,2022-11-08,2022-11-08
+ACC-00386,Cirino Moll Coello,montalbansilvia@example.com,+34 947474231,Madrid,Empresas,Medio,PRD-009,2023-02-10,Inactiva,86933.87,1901798.04,2023-02-10,2023-02-10
+ACC-00387,Cirino Amo Lasa,deboraguerra@example.org,+34 735 17 28 97,Sevilla,Retail,Medio,PRD-009,2023-04-09,Activa,396904.87,198979.17,2023-04-09,2023-04-09
+ACC-00388,Catalina Ponce Tur,kcervantes@example.org,+34877 060 463,Valencia,Premium,Medio,PRD-004,2022-03-05,Activa,315148.77,1271604.28,2022-03-05,2022-03-05
+ACC-00389,Reyes Fuente,elorzaaurea@example.com,+34979 573 660,Madrid,Retail,Bajo,PRD-002,2022-09-23,Inactiva,221715.66,214022.68,2022-09-23,2022-09-23
+ACC-00390,Paulina Sara Pintor Milla,pzapata@example.net,+34800 817 703,Madrid,Pyme,Bajo,PRD-002,2022-12-06,Activa,286942.1,1634455.07,2022-12-06,2022-12-06
+ACC-00391,Lupita Priego,ponceascension@example.net,+34 806 34 76 44,Madrid,Pyme,Alto,PRD-008,2023-02-09,Activa,176971.63,1812023.64,2023-02-09,2023-02-09
+ACC-00392,Carina Rocamora Mariscal,villanuevavera@example.org,+34 975 718 129,Alicante,Premium,Bajo,PRD-005,2022-10-09,Activa,308488.58,1276920.72,2022-10-09,2022-10-09
+ACC-00393,Bernarda del Reyes,virgilio02@example.com,+34 873 71 45 21,Alicante,Retail,Bajo,PRD-007,2023-05-26,Activa,68618.01,358888.5,2023-05-26,2023-05-26
+ACC-00394,Baudelio Sancho Parejo,zabaletalaura@example.com,+34 983926860,Madrid,Pyme,Alto,PRD-004,2023-06-23,Activa,272258.9,943592.95,2023-06-23,2023-06-23
+ACC-00395,Yago Naranjo Conesa,rupertacoca@example.org,+34806644742,Málaga,Empresas,Bajo,PRD-006,2023-05-30,Activa,298558.18,10072.09,2023-05-30,2023-05-30
+ACC-00396,Vinicio Catalá Franco,isernalbano@example.com,+34980 78 09 73,Alicante,Empresas,Alto,PRD-001,2022-10-15,Cerrada,486989.93,155275.39,2022-10-15,2022-10-15
+ACC-00397,Macario Tamarit,credondo@example.org,+34 703 849 830,Madrid,Premium,Alto,PRD-005,2022-09-04,Inactiva,398695.34,677349.5,2022-09-04,2022-09-04
+ACC-00398,Candelario Ballesteros Oller,codinaricarda@example.org,+34900 51 01 62,Sevilla,Empresas,Alto,PRD-003,2022-06-27,Activa,456990.0,7823.47,2022-06-27,2022-06-27
+ACC-00399,Nicodemo Luís Elías,cpalomino@example.org,+34 901 556 168,Valencia,Premium,Medio,PRD-010,2022-12-27,Activa,87778.38,27825.67,2022-12-27,2022-12-27
+ACC-00400,Esteban Sotelo Cañizares,llobetnarciso@example.net,+34947 833 901,Sevilla,Retail,Alto,PRD-004,2022-02-27,Activa,165867.0,1208976.27,2022-02-27,2022-02-27
+ACC-00401,Pastora Ángel-Bonilla,bmadrigal@example.net,+34 920 489 952,Valencia,Empresas,Bajo,PRD-006,2022-05-14,Activa,293304.59,1830309.5,2022-05-14,2022-05-14
+ACC-00402,Marcela Leonor Vizcaíno Valenciano,nescolano@example.org,+34888 301 071,Zaragoza,Retail,Medio,PRD-009,2022-04-24,Activa,331069.78,1151334.16,2022-04-24,2022-04-24
+ACC-00403,Salomón Ribera,varroyo@example.com,+34 875034414,Zaragoza,Premium,Bajo,PRD-005,2022-12-11,Activa,218434.19,1260495.28,2022-12-11,2022-12-11
+ACC-00404,José Luis Leonardo Morante Aguado,mingueznestor@example.com,+34732 35 57 70,Zaragoza,Premium,Alto,PRD-011,2023-05-14,Cerrada,346780.2,1854132.68,2023-05-14,2023-05-14
+ACC-00405,Jose Angel Cortés Serna,oscar60@example.net,+34 901 958 803,Valencia,Pyme,Medio,PRD-004,2023-01-01,Activa,147258.63,314301.99,2023-01-01,2023-01-01
+ACC-00406,Noa Mármol-Otero,companylisandro@example.org,+34923 68 29 96,Málaga,Retail,Bajo,PRD-012,2022-01-02,Activa,460519.11,1933439.96,2022-01-02,2022-01-02
+ACC-00407,Manuel Caro Mendez,leire04@example.com,+34823735743,Barcelona,Pyme,Bajo,PRD-011,2022-08-15,Activa,38903.32,660960.76,2022-08-15,2022-08-15
+ACC-00408,Encarna Díez,perellomilagros@example.org,+34 873 17 80 78,Barcelona,Empresas,Medio,PRD-003,2022-11-24,Activa,104842.14,1371010.96,2022-11-24,2022-11-24
+ACC-00409,Claudio Nieto Tomás,maura52@example.org,+34 984 230 768,Barcelona,Retail,Bajo,PRD-005,2022-12-25,Activa,366292.25,1936658.74,2022-12-25,2022-12-25
+ACC-00410,Abilio Mercader Arregui,minguezadelia@example.org,+34826 840 943,Málaga,Empresas,Alto,PRD-008,2023-02-28,Activa,414403.49,1566896.49,2023-02-28,2023-02-28
+ACC-00411,Chus Fernández Macías,berta57@example.net,+34 834 224 109,Alicante,Retail,Bajo,PRD-003,2022-08-19,Activa,159358.45,1900907.37,2022-08-19,2022-08-19
+ACC-00412,Lola de Gabaldón,carmela54@example.org,+34 887 93 21 49,Valencia,Pyme,Bajo,PRD-006,2022-03-17,Activa,273523.13,1791154.55,2022-03-17,2022-03-17
+ACC-00413,Luz Salcedo Ayuso,ambrosiosotelo@example.net,+34806 160 166,Alicante,Retail,Medio,PRD-006,2022-04-06,Inactiva,82498.6,1773994.2,2022-04-06,2022-04-06
+ACC-00414,Pastor Salmerón Pagès,nazaret38@example.org,+34 975 92 17 17,Barcelona,Empresas,Bajo,PRD-001,2022-06-10,Cerrada,204639.93,1085930.49,2022-06-10,2022-06-10
+ACC-00415,Octavio Modesto Solana Sosa,jacobocobo@example.net,+34 883 562 557,Bilbao,Empresas,Bajo,PRD-011,2022-09-29,Activa,196451.11,1076808.4,2022-09-29,2022-09-29
+ACC-00416,Ale Bas Talavera,ortegaalejandra@example.com,+34 849 459 928,Madrid,Empresas,Bajo,PRD-003,2023-05-18,Activa,147274.72,1307141.46,2023-05-18,2023-05-18
+ACC-00417,Hermenegildo Campo Moreno,matasberta@example.com,+34 945 96 39 38,Barcelona,Retail,Bajo,PRD-004,2023-05-07,Activa,145905.73,117968.99,2023-05-07,2023-05-07
+ACC-00418,Jose Angel Plana Batalla,horacio96@example.com,+34 924 83 21 97,Málaga,Pyme,Medio,PRD-005,2022-04-29,Inactiva,132502.2,1265826.08,2022-04-29,2022-04-29
+ACC-00419,Manu Sierra Morell,salgadogabriel@example.com,+34 946191965,Zaragoza,Pyme,Medio,PRD-003,2023-02-01,Activa,22308.46,851467.87,2023-02-01,2023-02-01
+ACC-00420,Mireia Barriga Botella,olgachamorro@example.net,+34 622 784 699,Bilbao,Retail,Bajo,PRD-004,2022-09-27,Activa,333734.23,125699.99,2022-09-27,2022-09-27
+ACC-00421,Chelo Fuster Moliner,clotilde46@example.net,+34924190986,Málaga,Premium,Alto,PRD-009,2022-12-19,Activa,193553.05,1021293.66,2022-12-19,2022-12-19
+ACC-00422,Teodosio Mariscal Barrios,valentina80@example.org,+34 927140369,Sevilla,Pyme,Medio,PRD-010,2023-05-02,Activa,451388.6,1414326.68,2023-05-02,2023-05-02
+ACC-00423,Maura Monreal Piñeiro,bpizarro@example.net,+34 875 272 386,Valencia,Retail,Medio,PRD-010,2023-05-30,Activa,492184.0,1942938.0,2023-05-30,2023-05-30
+ACC-00424,Sol Rincón Correa,salud22@example.org,+34 821027621,Madrid,Pyme,Bajo,PRD-003,2022-07-17,Cerrada,217696.62,1994401.91,2022-07-17,2022-07-17
+ACC-00425,Miguel Ángel Ricart Sarmiento,descolano@example.net,+34 949 87 65 32,Bilbao,Empresas,Alto,PRD-010,2022-06-01,Inactiva,33505.98,745603.26,2022-06-01,2022-06-01
+ACC-00426,María Del Carmen Aguilera Valentín,leticiavalls@example.com,+34 947 895 009,Zaragoza,Empresas,Alto,PRD-009,2023-02-11,Activa,436733.13,1562428.81,2023-02-11,2023-02-11
+ACC-00427,Ofelia Pedrosa Carbajo,jbernal@example.net,+34985 47 81 89,Barcelona,Pyme,Bajo,PRD-007,2023-06-20,Activa,293967.07,1504673.65,2023-06-20,2023-06-20
+ACC-00428,Donato Sureda Bermejo,emperatriz05@example.net,+34707 78 79 56,Barcelona,Empresas,Alto,PRD-002,2022-04-13,Inactiva,438946.78,491480.09,2022-04-13,2022-04-13
+ACC-00429,Rosalva Mariño Mancebo,andres-felipemateu@example.net,+34 883 07 92 90,Alicante,Retail,Bajo,PRD-010,2023-05-13,Activa,71926.34,1197743.29,2023-05-13,2023-05-13
+ACC-00430,Sandalio Rafa Amores Madrid,iblanca@example.net,+34 822 442 944,Málaga,Empresas,Alto,PRD-001,2023-02-16,Activa,372874.91,1837711.71,2023-02-16,2023-02-16
+ACC-00431,Adrián Cantón-Díaz,genovevasalom@example.com,+34849 43 72 80,Zaragoza,Empresas,Medio,PRD-001,2023-01-17,Activa,245809.61,1377174.83,2023-01-17,2023-01-17
+ACC-00432,Anselma Codina Correa,xrey@example.com,+34879 723 950,Valencia,Empresas,Alto,PRD-004,2022-04-11,Activa,412911.67,502310.96,2022-04-11,2022-04-11
+ACC-00433,René Carmona-Badía,abrilpujadas@example.com,+34 901 78 36 67,Barcelona,Premium,Medio,PRD-010,2023-03-03,Activa,411984.72,1468936.84,2023-03-03,2023-03-03
+ACC-00434,Camilo Royo-Albero,aurea76@example.net,+34918 01 85 69,Madrid,Premium,Bajo,PRD-006,2023-06-13,Activa,253397.64,228082.13,2023-06-13,2023-06-13
+ACC-00435,Florencio León-Lasa,jarafatima@example.net,+34943739385,Madrid,Premium,Bajo,PRD-010,2023-06-21,Inactiva,100363.39,68136.41,2023-06-21,2023-06-21
+ACC-00436,Faustino Alarcón Aguirre,alberosergio@example.org,+34985 175 344,Madrid,Empresas,Alto,PRD-008,2022-02-03,Activa,184175.96,901647.85,2022-02-03,2022-02-03
+ACC-00437,Ale Alvarez,barberadorotea@example.net,+34 876 911 192,Barcelona,Retail,Bajo,PRD-011,2023-02-11,Activa,297021.8,314046.57,2023-02-11,2023-02-11
+ACC-00438,Máxima Esteban Cantero,jose-luismarino@example.com,+34821 74 65 42,Zaragoza,Empresas,Bajo,PRD-010,2023-05-01,Inactiva,129329.96,1653283.91,2023-05-01,2023-05-01
+ACC-00439,Emiliano Barrios Piñeiro,dmendez@example.com,+34 884271739,Madrid,Pyme,Bajo,PRD-005,2022-04-03,Activa,286129.03,1928081.1,2022-04-03,2022-04-03
+ACC-00440,Carmina Téllez Camps,calixtarosado@example.org,+34 827 741 011,Sevilla,Premium,Medio,PRD-011,2022-08-15,Activa,256640.62,1722491.36,2022-08-15,2022-08-15
+ACC-00441,Pascuala Iglesia-Salmerón,valencianoeustaquio@example.net,+34 606 425 690,Valencia,Premium,Alto,PRD-008,2022-01-10,Inactiva,111885.02,1197104.96,2022-01-10,2022-01-10
+ACC-00442,Olga Trujillo,zrubio@example.net,+34820 83 06 71,Bilbao,Pyme,Medio,PRD-012,2022-11-09,Inactiva,229499.01,397328.56,2022-11-09,2022-11-09
+ACC-00443,Lupe Palomar-Mínguez,salvador01@example.com,+34 987517432,Málaga,Retail,Bajo,PRD-011,2022-11-06,Activa,331177.73,1678732.1,2022-11-06,2022-11-06
+ACC-00444,Almudena del Feijoo,josefa61@example.net,+34 927717320,Bilbao,Empresas,Alto,PRD-009,2023-01-19,Activa,31918.53,1976139.98,2023-01-19,2023-01-19
+ACC-00445,Albano Gómez,eporcel@example.net,+34902 787 005,Bilbao,Empresas,Bajo,PRD-005,2022-11-29,Activa,382737.19,1794358.44,2022-11-29,2022-11-29
+ACC-00446,Florentino Arnau Ramirez,galannoemi@example.net,+34 985782931,Zaragoza,Premium,Alto,PRD-011,2023-02-18,Activa,248686.41,555989.5,2023-02-18,2023-02-18
+ACC-00447,Quirino Cid Torrijos,sotovictoria@example.net,+34803320204,Málaga,Retail,Alto,PRD-007,2023-03-05,Activa,286021.22,339326.08,2023-03-05,2023-03-05
+ACC-00448,Javier Donaire Bartolomé,carbonellanastasia@example.net,+34876 136 565,Alicante,Empresas,Alto,PRD-011,2022-08-16,Activa,84993.33,1298110.1,2022-08-16,2022-08-16
+ACC-00449,Octavio Cervantes Montoya,maria-cristinaarroyo@example.net,+34849 511 426,Barcelona,Pyme,Bajo,PRD-005,2022-07-05,Activa,362593.32,1096014.9,2022-07-05,2022-07-05
+ACC-00450,Pablo Pelayo Cózar,lhervia@example.org,+34842196207,Zaragoza,Retail,Bajo,PRD-011,2022-07-07,Activa,372104.96,579524.81,2022-07-07,2022-07-07
+ACC-00451,Abraham Aguilar Escobar,luzsigfrido@example.net,+34 977232487,Bilbao,Empresas,Medio,PRD-006,2022-12-06,Inactiva,235268.28,1726106.41,2022-12-06,2022-12-06
+ACC-00452,Dafne Díaz Arellano,lilianavalero@example.net,+34 824 456 083,Sevilla,Retail,Alto,PRD-008,2022-03-14,Activa,149177.88,60827.04,2022-03-14,2022-03-14
+ACC-00453,Benigno Bustos,rosalia88@example.org,+34 975340312,Sevilla,Empresas,Medio,PRD-003,2022-06-04,Cerrada,446422.56,1972630.97,2022-06-04,2022-06-04
+ACC-00454,Leonor Egea Cuesta,balaguerfilomena@example.com,+34887 364 597,Valencia,Retail,Medio,PRD-006,2022-05-27,Activa,493320.19,592498.85,2022-05-27,2022-05-27
+ACC-00455,Baldomero Badía Echeverría,mireiaandres@example.com,+34983 11 37 99,Alicante,Empresas,Bajo,PRD-001,2022-03-01,Activa,84302.88,1517191.66,2022-03-01,2022-03-01
+ACC-00456,Hortensia Flor Moreno,melaniacanet@example.com,+34877 13 63 63,Valencia,Pyme,Alto,PRD-002,2023-05-17,Activa,214512.72,928670.57,2023-05-17,2023-05-17
+ACC-00457,Jonatan Tormo Ballester,ncoca@example.net,+34973 265 273,Sevilla,Empresas,Bajo,PRD-001,2022-01-05,Inactiva,378423.87,1038619.26,2022-01-05,2022-01-05
+ACC-00458,Elba Francisco Narváez,amilcarbarreda@example.com,+34 843177625,Madrid,Premium,Bajo,PRD-011,2022-01-19,Activa,172174.89,214308.14,2022-01-19,2022-01-19
+ACC-00459,Venceslás del Crespo,crescenciagras@example.org,+34 947873977,Bilbao,Premium,Bajo,PRD-009,2023-01-28,Inactiva,149101.13,546196.97,2023-01-28,2023-01-28
+ACC-00460,Adrián Roman-Huerta,naciorovira@example.net,+34876 92 90 60,Zaragoza,Pyme,Alto,PRD-010,2023-06-17,Cerrada,171366.42,1797836.74,2023-06-17,2023-06-17
+ACC-00461,Joel Varela Aragonés,eprado@example.net,+34825773180,Valencia,Pyme,Bajo,PRD-004,2023-01-03,Activa,363584.41,218971.84,2023-01-03,2023-01-03
+ACC-00462,Concha Cazorla Palmer,jorge10@example.com,+34 902 279 907,Valencia,Retail,Medio,PRD-010,2022-01-23,Activa,396063.58,719144.49,2022-01-23,2022-01-23
+ACC-00463,Reina Chacón Ramirez,montserratpellicer@example.net,+34 975016580,Madrid,Retail,Alto,PRD-009,2022-09-19,Activa,418060.0,48881.87,2022-09-19,2022-09-19
+ACC-00464,Ignacio Renato Lerma Galan,narvaezmagdalena@example.org,+34983 50 16 57,Alicante,Pyme,Bajo,PRD-007,2022-04-29,Activa,237198.17,263910.55,2022-04-29,2022-04-29
+ACC-00465,Almudena Flavia Pazos Díez,fuentesemiliano@example.com,+34879817933,Málaga,Retail,Alto,PRD-005,2022-01-10,Activa,311398.89,1386489.01,2022-01-10,2022-01-10
+ACC-00466,Feliciana Lastra Vara,dlluch@example.org,+34935 778 817,Barcelona,Empresas,Bajo,PRD-002,2023-03-05,Activa,248869.53,1198453.71,2023-03-05,2023-03-05
+ACC-00467,Nidia del Sans,nereida13@example.com,+34823 16 24 11,Sevilla,Empresas,Alto,PRD-009,2022-09-27,Activa,80186.8,1073684.47,2022-09-27,2022-09-27
+ACC-00468,Emiliano Caparrós Colomer,ncontreras@example.net,+34724 68 27 56,Alicante,Empresas,Bajo,PRD-012,2022-08-01,Activa,335816.57,1809104.09,2022-08-01,2022-08-01
+ACC-00469,Paz Almazán Manzanares,bernardinoalonso@example.org,+34984569557,Barcelona,Retail,Alto,PRD-003,2023-05-21,Activa,452389.69,1270890.42,2023-05-21,2023-05-21
+ACC-00470,Natalia Salgado-Seco,claudia24@example.org,+34 883 37 54 02,Bilbao,Pyme,Bajo,PRD-005,2023-04-13,Activa,87350.9,30861.27,2023-04-13,2023-04-13
+ACC-00471,Elodia Sarmiento Delgado,leonormachado@example.org,+34849 22 31 05,Zaragoza,Pyme,Alto,PRD-006,2022-10-25,Activa,425622.95,1775098.62,2022-10-25,2022-10-25
+ACC-00472,Begoña Saez-Juliá,geronimo38@example.net,+34745 52 57 82,Valencia,Empresas,Medio,PRD-003,2022-01-10,Inactiva,477544.58,500034.27,2022-01-10,2022-01-10
+ACC-00473,Encarna de Amaya,xvalera@example.org,+34 974520885,Zaragoza,Premium,Bajo,PRD-006,2022-04-06,Activa,481154.97,507257.84,2022-04-06,2022-04-06
+ACC-00474,Jordi Victorino Manjón Colom,snevado@example.org,+34977028140,Alicante,Pyme,Alto,PRD-012,2023-01-30,Inactiva,83389.36,221648.73,2023-01-30,2023-01-30
+ACC-00475,María Pilar Giménez Salmerón,cirino50@example.net,+34 872983430,Barcelona,Pyme,Alto,PRD-003,2022-03-02,Activa,284471.72,848233.75,2022-03-02,2022-03-02
+ACC-00476,Julio César Salinas Bonet,fferreras@example.com,+34 983056265,Madrid,Premium,Medio,PRD-006,2023-01-24,Inactiva,56468.74,793132.74,2023-01-24,2023-01-24
+ACC-00477,Florencia Albero Luís,pascual47@example.net,+34823 37 67 42,Bilbao,Empresas,Bajo,PRD-002,2022-02-17,Activa,338964.46,1523433.87,2022-02-17,2022-02-17
+ACC-00478,Pastora Ribas Chaparro,cobohipolito@example.com,+34 977 851 961,Zaragoza,Retail,Medio,PRD-011,2022-08-18,Activa,124288.5,658786.45,2022-08-18,2022-08-18
+ACC-00479,Hernando Llano Ribas,cayetanasevilla@example.net,+34 843 32 64 87,Madrid,Retail,Alto,PRD-003,2023-01-30,Inactiva,252783.79,912042.32,2023-01-30,2023-01-30
+ACC-00480,Sergio Matas Mateu,osilva@example.org,+34 624 47 14 62,Barcelona,Pyme,Medio,PRD-003,2023-05-23,Activa,485072.52,53218.96,2023-05-23,2023-05-23
+ACC-00481,Yésica Hierro Andrade,lluchamerica@example.org,+34927979647,Málaga,Pyme,Bajo,PRD-009,2022-08-17,Activa,222094.44,1124721.61,2022-08-17,2022-08-17
+ACC-00482,Glauco Vila Alemany,fermin90@example.org,+34920 725 204,Alicante,Empresas,Bajo,PRD-008,2022-04-01,Cerrada,372619.48,-13573.29,2022-04-01,2022-04-01
+ACC-00483,Hortensia Palacio Atienza,lupe81@example.net,+34 872 219 285,Madrid,Retail,Bajo,PRD-007,2023-02-18,Activa,481585.62,1256953.15,2023-02-18,2023-02-18
+ACC-00484,Sarita Mascaró Linares,clemente89@example.com,+34844 028 457,Sevilla,Pyme,Medio,PRD-009,2023-06-05,Activa,27137.61,406982.13,2023-06-05,2023-06-05
+ACC-00485,Evita Cánovas Calatayud,fabianvaquero@example.org,+34 871 898 881,Alicante,Empresas,Alto,PRD-006,2023-04-11,Activa,48718.51,1300766.02,2023-04-11,2023-04-11
+ACC-00486,Jimena Benito Carnero,aguedaalemany@example.com,+34 925 45 27 98,Zaragoza,Empresas,Alto,PRD-006,2022-01-03,Activa,351048.03,43845.13,2022-01-03,2022-01-03
+ACC-00487,Carmela Mayo Andrade,gironeduardo@example.net,+34 844342321,Valencia,Pyme,Bajo,PRD-008,2022-06-18,Activa,97960.73,197528.91,2022-06-18,2022-06-18
+ACC-00488,Nuria Cantón Bermejo,tomemarita@example.com,+34 803310890,Alicante,Premium,Alto,PRD-004,2023-02-07,Activa,378574.67,45325.74,2023-02-07,2023-02-07
+ACC-00489,Azahara Isern Aroca,mataguadalupe@example.org,+34 825 19 39 32,Alicante,Premium,Medio,PRD-008,2022-05-07,Activa,368106.97,1084113.97,2022-05-07,2022-05-07
+ACC-00490,Albina Botella Coello,cruz55@example.org,+34 981 93 89 11,Alicante,Premium,Alto,PRD-010,2023-03-20,Activa,365247.33,213182.65,2023-03-20,2023-03-20
+ACC-00491,Rafaela Alcalá-Ángel,ligiafeliu@example.com,+34 849801387,Zaragoza,Pyme,Medio,PRD-011,2023-02-01,Cerrada,457955.12,1512868.05,2023-02-01,2023-02-01
+ACC-00492,Octavia Esteve Sabater,escrivaperlita@example.com,+34941638361,Zaragoza,Empresas,Medio,PRD-007,2022-10-08,Inactiva,69090.0,1185175.12,2022-10-08,2022-10-08
+ACC-00493,Beatriz Solano Canet,ana-sofiapaniagua@example.net,+34 888801571,Zaragoza,Premium,Bajo,PRD-005,2023-06-09,Activa,357192.27,1357553.16,2023-06-09,2023-06-09
+ACC-00494,Elodia Saura Mesa,jgonzalez@example.com,+34888 631 752,Valencia,Empresas,Alto,PRD-012,2022-05-16,Activa,176118.9,934758.34,2022-05-16,2022-05-16
+ACC-00495,Nicolás Tur Calzada,hrios@example.net,+34823 126 691,Bilbao,Pyme,Bajo,PRD-011,2023-03-04,Activa,12636.07,247919.76,2023-03-04,2023-03-04
+ACC-00496,Anacleto Parra Flor,herberto96@example.org,+34878674994,Bilbao,Premium,Medio,PRD-004,2022-02-27,Activa,73214.2,77167.29,2022-02-27,2022-02-27
+ACC-00497,Felipa Tamarit Quiroga,rvidal@example.org,+34973 114 773,Madrid,Empresas,Medio,PRD-004,2022-10-30,Activa,434017.69,1465959.58,2022-10-30,2022-10-30
+ACC-00498,Albino Cabezas Baena,valentinirene@example.org,+34856 952 499,Málaga,Premium,Alto,PRD-012,2022-08-18,Activa,399410.88,539659.24,2022-08-18,2022-08-18
+ACC-00499,Ricardo Benito Vizcaíno,msolano@example.com,+34980 78 48 58,Málaga,Pyme,Alto,PRD-007,2022-02-18,Activa,276062.3,-23421.26,2022-02-18,2022-02-18
+ACC-00500,Agustina de Ros,plavinicio@example.com,+34 941770028,Alicante,Premium,Alto,PRD-004,2022-09-15,Activa,323816.19,1497970.8,2022-09-15,2022-09-15

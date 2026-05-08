@@ -1,0 +1,26 @@
+name: finanzas_dw
+version: "1.0.0"
+config-version: 2
+
+profile: finanzas_dw
+
+model-paths: ["models"]
+test-paths:  ["tests"]
+docs-paths:  ["docs"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  finanzas_dw:
+    100-bronze:
+      +schema:       bronze
+      +materialized: view
+
+    200-silver:
+      +schema:       silver
+      +materialized: table
+
+    300-gold:
+      +schema:       gold
+      +materialized: table
