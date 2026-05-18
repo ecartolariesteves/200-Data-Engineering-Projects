@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: >
+      Tabla de hechos principal. Une pedidos, clientes y productos.
+      Granularidad: 1 fila por pedido. Fuente de verdad para reporting de ventas.
+    columns:
+      - name: order_id
+        description: "PK del pedido"
+        tests: [unique, not_null]
+      - name: revenue_eur
+        description: "Revenue solo de pedidos completados. 0 para cancelados/enviados."
+      - name: order_year_month
+        description: "Año-mes en formato YYYY-MM para agrupaciones temporales"
+
+  - name: dim_customers
+    description: >
+      Dimensión de clientes enriquecida con métricas de comportamiento agregadas.
+      Granularidad: 1 fila por cliente.
+    columns:
+      - name: customer_id
+        description: "PK del cliente"
+        tests: [unique, not_null]
+      - name: value_tier
+        description: "Clasificación del cliente por revenue total"
+        tests:
+          - accepted_values:
+              values: ['high_value', 'mid_value', 'low_value']
+      - name: total_revenue_eur
+        description: "Revenue total acumulado del cliente (solo pedidos completados)"

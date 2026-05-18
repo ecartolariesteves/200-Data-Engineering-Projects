@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw_hist_as400
+    description: "Capa RAW del origen Hist-AS400."
+    database: project-34ac0f7c-00d8-4675-afe
+    schema: raw_hist_as400
+    tags: ["raw", "source", "hist_as400"]
+    tables:
+      - name: customers
+        description: "Clientes del origen Hist-AS400"
+        columns:
+          - name: customer_id
+            tests: [not_null]
+      - name: orders
+        description: "Pedidos del origen Hist-AS400"
+        columns:
+          - name: order_id
+            tests: [not_null]

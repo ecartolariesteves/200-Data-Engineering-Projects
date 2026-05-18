@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Pedidos limpios y tipificados desde la capa RAW. Vista sin coste de almacenamiento."
+    columns:
+      - name: order_id
+        description: "PK del pedido"
+        tests: [unique, not_null]
+      - name: customer_id
+        description: "FK al cliente"
+        tests: [not_null]
+      - name: product_id
+        description: "FK al producto"
+        tests: [not_null]
+      - name: order_date
+        description: "Fecha del pedido"
+        tests: [not_null]
+      - name: status
+        description: "Estado normalizado a minúsculas"
+        tests:
+          - accepted_values:
+              values: ['completed', 'shipped', 'cancelled', 'pending']
+      - name: country_code
+        description: "Código de país ISO en mayúsculas"
+      - name: order_amount_eur
+        description: "Importe del pedido en EUR"
+
+  - name: stg_customers
+    description: "Clientes limpios y tipificados desde la capa RAW."
+    columns:
+      - name: customer_id
+        description: "PK del cliente"
+        tests: [unique, not_null]
+      - name: email
+        description: "Email normalizado a minúsculas"
+        tests: [unique, not_null]
+      - name: segment
+        description: "Segmento del cliente"
+        tests:
+          - accepted_values:
+              values: ['premium', 'standard']
+
+  - name: stg_products
+    description: "Productos limpios con margen calculado."
+    columns:
+      - name: product_id
+        description: "PK del producto"
+        tests: [unique, not_null]
+      - name: gross_margin_pct
+        description: "Margen bruto en porcentaje"

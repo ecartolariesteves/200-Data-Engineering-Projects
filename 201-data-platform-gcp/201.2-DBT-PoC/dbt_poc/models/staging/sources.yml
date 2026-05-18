@@ -1,0 +1,72 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Capa RAW en BigQuery. Datos cargados directamente desde el DW on-premise sin transformar."
+    database: project-34ac0f7c-00d8-4675-afe
+    schema: raw
+    tags: ["raw", "source"]
+
+    tables:
+      - name: orders
+        description: "Tabla de pedidos extraída del DW on-premise. Granularidad: 1 fila por pedido."
+        columns:
+          - name: order_id
+            description: "Identificador único del pedido"
+            tests:
+              - unique
+              - not_null
+          - name: customer_id
+            description: "FK al cliente"
+            tests:
+              - not_null
+          - name: product_id
+            description: "FK al producto"
+            tests:
+              - not_null
+          - name: order_date
+            description: "Fecha del pedido (YYYY-MM-DD)"
+            tests:
+              - not_null
+          - name: status
+            description: "Estado del pedido"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ['completed', 'shipped', 'cancelled', 'pending']
+          - name: amount
+            description: "Importe total del pedido en EUR"
+          - name: country
+            description: "País del pedido (código ISO)"
+
+      - name: customers
+        description: "Tabla de clientes extraída del DW on-premise."
+        columns:
+          - name: customer_id
+            description: "Identificador único del cliente"
+            tests:
+              - unique
+              - not_null
+          - name: email
+            description: "Email del cliente"
+            tests:
+              - unique
+              - not_null
+          - name: segment
+            description: "Segmento del cliente"
+            tests:
+              - accepted_values:
+                  values: ['premium', 'standard']
+
+      - name: products
+        description: "Catálogo de productos extraído del DW on-premise."
+        columns:
+          - name: product_id
+            description: "Identificador único del producto"
+            tests:
+              - unique
+              - not_null
+          - name: unit_price
+            description: "Precio de venta unitario en EUR"
+          - name: cost_price
+            description: "Coste unitario en EUR"

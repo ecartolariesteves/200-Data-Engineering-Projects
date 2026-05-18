@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw_sis
+    description: "Capa RAW del origen SIS."
+    database: project-34ac0f7c-00d8-4675-afe
+    schema: raw_sis
+    tags: ["raw", "source", "sis"]
+    tables:
+      - name: customers
+        description: "Clientes del origen SIS"
+        columns:
+          - name: customer_id
+            tests: [not_null]
+      - name: orders
+        description: "Pedidos del origen SIS"
+        columns:
+          - name: order_id
+            tests: [not_null]

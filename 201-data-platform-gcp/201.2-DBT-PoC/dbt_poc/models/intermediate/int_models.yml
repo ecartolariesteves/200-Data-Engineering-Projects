@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: int_customers
+    description: >
+      Clientes unificados de los 11 orígenes mediante UNION ALL.
+      Incluye columna 'origen' para trazabilidad completa.
+      Granularidad: 1 fila por cliente por origen.
+    columns:
+      - name: customer_id
+        description: "ID del cliente en su sistema origen"
+        tests: [not_null]
+      - name: origen
+        description: "Sistema origen del registro"
+        tests:
+          - accepted_values:
+              values: ['ALLARD','AS400-1','GESBOX','Hist-AS400','NAV','RTS-1','RTS-2','RTS-3','SAP-1','SAP-2','SIS']
+
+  - name: int_orders
+    description: >
+      Pedidos unificados de los 11 orígenes mediante UNION ALL.
+      Incluye columna 'origen' para trazabilidad completa.
+    columns:
+      - name: order_id
+        description: "ID del pedido en su sistema origen"
+        tests: [not_null]
+      - name: origen
+        description: "Sistema origen del registro"
+        tests:
+          - accepted_values:
+              values: ['ALLARD','AS400-1','GESBOX','Hist-AS400','NAV','RTS-1','RTS-2','RTS-3','SAP-1','SAP-2','SIS']

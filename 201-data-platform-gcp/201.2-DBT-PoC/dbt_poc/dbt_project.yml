@@ -1,0 +1,43 @@
+name: 'dbt_poc'
+version: '1.0.0'
+config-version: 2
+
+# El profile debe coincidir con el nombre en ~/.dbt/profiles.yml
+profile: 'dbt_poc'
+
+# Rutas del proyecto
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# ── Configuración de modelos ─────────────────────────────────────────────────
+models:
+  dbt_poc:
+
+    staging:
+      +schema: staging          # BQ dataset: dbt_poc_dev_staging
+      +materialized: view       # staging siempre como vistas (sin coste storage)
+      +tags: ["staging"]
+
+    intermediate:
+      +schema: intermediate     # BQ dataset: dbt_poc_dev_intermediate
+      +materialized: view       # UNION ALL como vistas (sin coste storage)
+      +tags: ["intermediate"]
+
+    marts:
+      +schema: marts            # BQ dataset: dbt_poc_dev_marts
+      +materialized: table      # marts como tablas para rendimiento
+      +tags: ["marts"]
+
+# ── Variables globales ────────────────────────────────────────────────────────
+vars:
+  raw_dataset: "raw"
+  project_id: "project-34ac0f7c-00d8-4675-afe"

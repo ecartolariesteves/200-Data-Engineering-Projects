@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw_nav
+    description: "Capa RAW del origen NAV."
+    database: project-34ac0f7c-00d8-4675-afe
+    schema: raw_nav
+    tags: ["raw", "source", "nav"]
+    tables:
+      - name: customers
+        description: "Clientes del origen NAV"
+        columns:
+          - name: customer_id
+            tests: [not_null]
+      - name: orders
+        description: "Pedidos del origen NAV"
+        columns:
+          - name: order_id
+            tests: [not_null]
