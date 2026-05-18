@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+NAV-C001,Anna,Johansson,anna.johansson@nav.se,SE,2020-04-05,premium
+NAV-C002,Erik,Lindqvist,erik.lindqvist@nav.se,SE,2020-10-19,standard
+NAV-C003,Ingrid,Karlsson,ingrid.karlsson@nav.no,NO,2021-03-28,standard

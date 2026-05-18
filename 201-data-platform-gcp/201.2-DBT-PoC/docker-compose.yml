@@ -1,0 +1,84 @@
+# ===========================================
+# Airflow con Docker Compose
+# Versión simplificada para PoC local
+# ===========================================
+# Comandos:
+#   Iniciar:  docker-compose up -d
+#   Parar:    docker-compose down
+#   Logs:     docker-compose logs -f airflow
+#   UI:       http://localhost:8080  (admin / admin)
+# ===========================================
+
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.9.1
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DEFAULT_TIMEZONE: Europe/Madrid
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__WEBSERVER__SECRET_KEY: dbt-poc-secret-key-change-in-prod
+    # Rutas del proyecto montadas en el contenedor
+    DBT_PROJECT_DIR: /opt/dbt_poc
+    DBT_PROFILES_DIR: /opt/dbt_profiles
+    GCP_PROJECT_ID: project-34ac0f7c-00d8-4675-afe
+    GCP_REGION: europe-west6
+    BQ_DATASET_RAW: raw
+  volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/logs:/opt/airflow/logs
+    - ./airflow/plugins:/opt/airflow/plugins
+    - ./dbt_poc:/opt/dbt_poc                          # proyecto dbt
+    - ./ingestion:/opt/ingestion                      # scripts de ingesta
+    - ./data:/opt/data                                # CSVs de muestra
+    - ${USERPROFILE}/.dbt:/opt/dbt_profiles           # profiles.yml (fuera del repo)
+    - ${USERPROFILE}/.config/gcloud:/opt/gcloud       # credenciales ADC
+  depends_on:
+    postgres:
+      condition: service_healthy
+
+services:
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+
+  airflow-init:
+    <<: *airflow-common
+    command: >
+      bash -c "
+        pip install dbt-bigquery==1.7.8 google-cloud-bigquery==3.17.2 python-dotenv==1.0.1 &&
+        airflow db migrate &&
+        airflow users create
+          --username admin
+          --password admin
+          --firstname Admin
+          --lastname User
+          --role Admin
+          --email admin@example.com
+      "
+    restart: "no"
+
+  airflow:
+    <<: *airflow-common
+    command: >
+      bash -c "
+        pip install dbt-bigquery==1.7.8 google-cloud-bigquery==3.17.2 python-dotenv==1.0.1 &&
+        airflow scheduler &
+        airflow webserver --port 8080
+      "
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5

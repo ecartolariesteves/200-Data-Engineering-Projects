@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,status,amount,country
+R2-O001,R2-C001,P004,2024-01-11,completed,30.0,GR
+R2-O002,R2-C002,P002,2024-01-28,shipped,145.5,GR
+R2-O003,R2-C003,P001,2024-02-16,completed,250.0,GR

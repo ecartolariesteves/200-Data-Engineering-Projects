@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+SAP1-C001,Maria,Garcia,maria.garcia@sap1.es,ES,2019-07-15,premium
+SAP1-C002,David,Fernandez,david.fernandez@sap1.es,ES,2020-01-30,premium
+SAP1-C003,Isabel,Romero,isabel.romero@sap1.es,ES,2020-09-12,standard

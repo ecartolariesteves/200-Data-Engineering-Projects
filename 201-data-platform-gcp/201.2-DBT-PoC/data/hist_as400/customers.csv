@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+HAS-C001,Roberto,Conti,roberto.conti@hist.it,IT,2018-03-12,standard
+HAS-C002,Giulia,Ricci,giulia.ricci@hist.it,IT,2018-09-25,premium
+HAS-C003,Marco,Esposito,marco.esposito@hist.it,IT,2019-01-07,standard

@@ -1,0 +1,11 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+C001,Maria,Garcia,maria.garcia@email.com,ES,2023-03-15,premium
+C002,Luca,Rossi,luca.rossi@email.com,IT,2023-04-20,standard
+C003,Hans,Müller,hans.muller@email.com,DE,2023-05-10,premium
+C004,Sophie,Dubois,sophie.dubois@email.com,FR,2023-06-01,standard
+C005,Carlos,Lopez,carlos.lopez@email.com,ES,2023-07-12,standard
+C006,Ana,Ferreira,ana.ferreira@email.com,PT,2023-08-03,premium
+C007,Giulia,Bianchi,giulia.bianchi@email.com,IT,2023-09-18,standard
+C008,Pierre,Martin,pierre.martin@email.com,FR,2023-10-05,standard
+C009,Isabel,Santos,isabel.santos@email.com,ES,2023-11-22,premium
+C010,Thomas,Schmidt,thomas.schmidt@email.com,DE,2023-12-01,standard

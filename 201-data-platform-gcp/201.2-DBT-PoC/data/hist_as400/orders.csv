@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,status,amount,country
+HAS-O001,HAS-C001,P005,2024-01-10,completed,220.0,IT
+HAS-O002,HAS-C002,P001,2024-01-22,completed,250.0,IT
+HAS-O003,HAS-C003,P004,2024-02-14,shipped,30.0,IT

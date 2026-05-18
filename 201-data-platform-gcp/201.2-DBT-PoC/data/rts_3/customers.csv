@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+R3-C001,Marek,Novak,marek.novak@rts3.cz,CZ,2021-02-28,standard
+R3-C002,Jana,Dvorak,jana.dvorak@rts3.cz,CZ,2021-08-11,premium
+R3-C003,Tomas,Kral,tomas.kral@rts3.sk,SK,2022-03-05,standard

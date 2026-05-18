@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+AS1-C001,Hans,Muller,hans.muller@as400.de,DE,2021-05-10,premium
+AS1-C002,Greta,Schmidt,greta.schmidt@as400.de,DE,2021-08-22,standard
+AS1-C003,Klaus,Weber,klaus.weber@as400.de,AT,2022-02-14,standard

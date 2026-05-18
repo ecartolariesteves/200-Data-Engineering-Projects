@@ -1,0 +1,44 @@
+# ===========================================
+# dbt profiles - TEMPLATE SIN CREDENCIALES
+#
+# Copia este fichero a ~/.dbt/profiles.yml
+# NUNCA subas profiles.yml a GitHub
+# ===========================================
+#
+# DOS MÉTODOS DE AUTENTICACIÓN:
+#
+# ── DEV (local) ──────────────────────────────────────────────────────────────
+# Usa Application Default Credentials (ADC). Sin fichero JSON.
+# Válido si tienes VS Code conectado a Google Cloud,
+# o si has ejecutado: gcloud auth application-default login
+#
+# ── PROD (CI/CD / Cloud Run) ─────────────────────────────────────────────────
+# Usa Service Account con fichero JSON.
+# El JSON NUNCA se sube a GitHub (está en .gitignore).
+# Se inyecta como secret en el pipeline (GitHub Actions / Cloud Run).
+# ===========================================
+
+dbt_poc:
+  target: dev
+  outputs:
+
+    # ── Entorno local / desarrollo ──────────────────────────────────────────
+    dev:
+      type: bigquery
+      method: oauth                              # ADC — sin fichero JSON
+      project: project-34ac0f7c-00d8-4675-afe
+      dataset: dbt_poc_dev
+      location: europe-west6
+      threads: 4
+      timeout_seconds: 300
+
+    # ── Entorno producción (CI/CD) ──────────────────────────────────────────
+    prod:
+      type: bigquery
+      method: service-account                   # SA — fichero JSON inyectado
+      project: project-34ac0f7c-00d8-4675-afe
+      dataset: dbt_poc_prod
+      location: europe-west6
+      keyfile: /RUTA/AL/service-account.json    # <-- nunca subir este fichero
+      threads: 8
+      timeout_seconds: 300

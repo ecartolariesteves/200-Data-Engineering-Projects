@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+ALL-C001,Jean,Allard,jean.allard@allard.fr,FR,2022-01-10,premium
+ALL-C002,Marie,Dupont,marie.dupont@allard.fr,FR,2022-03-15,standard
+ALL-C003,Pierre,Martin,pierre.martin@allard.fr,BE,2022-06-20,premium

@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,status,amount,country
+ALL-O001,ALL-C001,P001,2024-01-05,completed,310.0,FR
+ALL-O002,ALL-C002,P003,2024-01-12,completed,95.0,FR
+ALL-O003,ALL-C003,P002,2024-02-01,shipped,160.0,BE

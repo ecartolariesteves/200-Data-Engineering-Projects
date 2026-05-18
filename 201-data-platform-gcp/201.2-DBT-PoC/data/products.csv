@@ -1,0 +1,6 @@
+product_id,product_name,category,unit_price,cost_price,supplier_country
+P001,Laptop Pro 15,Electronics,250.00,150.00,CN
+P002,Wireless Mouse,Electronics,145.50,60.00,CN
+P003,USB-C Hub,Electronics,89.99,35.00,TW
+P004,Keyboard Compact,Electronics,30.00,12.00,CN
+P005,Monitor 27inch,Electronics,220.00,110.00,KR

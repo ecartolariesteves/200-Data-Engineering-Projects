@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,status,amount,country
+SIS-O001,SIS-C001,P001,2024-01-13,completed,250.0,FR
+SIS-O002,SIS-C002,P004,2024-01-26,shipped,30.0,FR
+SIS-O003,SIS-C003,P002,2024-02-17,completed,145.5,CH

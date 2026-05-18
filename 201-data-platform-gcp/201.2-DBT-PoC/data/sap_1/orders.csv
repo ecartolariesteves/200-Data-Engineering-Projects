@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,status,amount,country
+SAP1-O001,SAP1-C001,P002,2024-01-04,completed,145.5,ES
+SAP1-O002,SAP1-C002,P001,2024-01-16,completed,250.0,ES
+SAP1-O003,SAP1-C003,P004,2024-02-07,shipped,30.0,ES

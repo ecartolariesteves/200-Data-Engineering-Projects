@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,status,amount,country
+AS1-O001,AS1-C001,P001,2024-01-08,completed,250.0,DE
+AS1-O002,AS1-C002,P004,2024-01-20,completed,30.0,DE
+AS1-O003,AS1-C003,P005,2024-02-10,cancelled,220.0,AT

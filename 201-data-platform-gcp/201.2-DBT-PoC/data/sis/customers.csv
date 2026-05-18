@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+SIS-C001,Sophie,Leroy,sophie.leroy@sis.fr,FR,2020-08-03,premium
+SIS-C002,Thomas,Bernard,thomas.bernard@sis.fr,FR,2021-04-16,standard
+SIS-C003,Camille,Petit,camille.petit@sis.ch,CH,2021-10-29,premium

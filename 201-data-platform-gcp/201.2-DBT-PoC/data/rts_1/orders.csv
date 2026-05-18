@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,status,amount,country
+R1-O001,R1-C001,P001,2024-01-09,completed,250.0,PT
+R1-O002,R1-C002,P005,2024-01-25,completed,220.0,PT
+R1-O003,R1-C003,P003,2024-02-12,cancelled,89.99,PT

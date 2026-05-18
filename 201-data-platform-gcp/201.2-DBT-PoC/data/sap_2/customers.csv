@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+SAP2-C001,Luca,Bianchi,luca.bianchi@sap2.it,IT,2019-11-20,standard
+SAP2-C002,Valentina,Russo,valentina.russo@sap2.it,IT,2020-05-08,premium
+SAP2-C003,Federico,Bruno,federico.bruno@sap2.it,IT,2021-01-25,standard

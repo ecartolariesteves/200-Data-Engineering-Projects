@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+R1-C001,Joao,Silva,joao.silva@rts1.pt,PT,2021-06-14,premium
+R1-C002,Ana,Ferreira,ana.ferreira@rts1.pt,PT,2021-12-01,standard
+R1-C003,Miguel,Santos,miguel.santos@rts1.pt,PT,2022-04-09,standard

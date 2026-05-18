@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,status,amount,country
+GBX-O001,GBX-C001,P002,2024-01-03,completed,145.5,ES
+GBX-O002,GBX-C002,P001,2024-01-15,shipped,250.0,ES
+GBX-O003,GBX-C003,P003,2024-02-05,completed,89.99,ES

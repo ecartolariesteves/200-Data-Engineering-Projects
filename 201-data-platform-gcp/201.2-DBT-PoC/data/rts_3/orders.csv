@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,status,amount,country
+R3-O001,R3-C001,P003,2024-01-14,completed,89.99,CZ
+R3-O002,R3-C002,P001,2024-02-02,completed,250.0,CZ
+R3-O003,R3-C003,P005,2024-02-19,shipped,220.0,SK

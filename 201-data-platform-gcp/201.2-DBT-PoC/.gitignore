@@ -1,0 +1,62 @@
+# ===========================================
+# CREDENCIALES - NUNCA subir a GitHub
+# ===========================================
+*.json
+!package.json
+service-account*.json
+credentials*.json
+keyfile*.json
+
+# dbt profiles con credenciales reales
+profiles.yml
+!profiles.yml.example
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# ===========================================
+# Python
+# ===========================================
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.Python
+
+# ===========================================
+# dbt
+# ===========================================
+dbt_poc/target/
+dbt_poc/dbt_packages/
+dbt_poc/logs/
+dbt_poc/.user.yml
+
+# ===========================================
+# Airflow
+# ===========================================
+airflow/logs/**
+!airflow/logs/.gitkeep
+
+# ===========================================
+# Sistema operativo
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+*.swp
+*.swo
+
+# ===========================================
+# IDEs
+# ===========================================
+.vscode/
+.idea/
+*.iml

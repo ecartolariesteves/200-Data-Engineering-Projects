@@ -1,0 +1,103 @@
+# ===========================================
+# .github/workflows/dbt_ci_cd.yml
+#
+# CI/CD pipeline para dbt
+#
+# TRIGGERS:
+#   - PR hacia develop  → ejecuta en DEV   (validación)
+#   - PR hacia main     → ejecuta en PROD  (deploy)
+#
+# SECRETS necesarios en GitHub (Settings → Secrets → Actions):
+#   GCP_SA_KEY  → contenido del JSON de la Service Account (base64)
+#
+# ===========================================
+
+name: dbt CI/CD Pipeline
+
+on:
+  pull_request:
+    branches:
+      - develop    # PR a develop → entorno DEV
+      - main       # PR a main    → entorno PROD
+    paths:
+      - 'dbt_poc/**'          # solo si cambia algo en dbt
+      - '.github/workflows/**'
+
+jobs:
+  dbt-pipeline:
+    name: dbt run + test (${{ github.base_ref }})
+    runs-on: ubuntu-latest
+
+    # Determina el target según la rama destino del PR
+    env:
+      DBT_TARGET: ${{ github.base_ref == 'main' && 'prod' || 'dev' }}
+
+    steps:
+
+      # ── 1. Checkout del código ──────────────────────────────────────────
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ── 2. Python ───────────────────────────────────────────────────────
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ── 3. Instalar dbt ─────────────────────────────────────────────────
+      - name: Install dbt-bigquery
+        run: pip install dbt-bigquery==1.7.8
+
+      # ── 4. Autenticación GCP ────────────────────────────────────────────
+      # El JSON de la SA se guarda en GitHub Secrets como GCP_SA_KEY
+      # Se escribe en disco solo durante la ejecución del workflow
+      - name: Authenticate GCP
+        run: |
+          echo "${{ secrets.GCP_SA_KEY }}" | base64 -d > /tmp/sa_key.json
+          echo "GOOGLE_APPLICATION_CREDENTIALS=/tmp/sa_key.json" >> $GITHUB_ENV
+
+      # ── 5. Crear profiles.yml en el runner ──────────────────────────────
+      - name: Setup dbt profiles
+        run: |
+          mkdir -p ~/.dbt
+          cat > ~/.dbt/profiles.yml << EOF
+          dbt_poc:
+            target: ${{ env.DBT_TARGET }}
+            outputs:
+              dev:
+                type: bigquery
+                method: service-account
+                project: project-34ac0f7c-00d8-4675-afe
+                dataset: dbt_poc_dev
+                location: europe-west6
+                keyfile: /tmp/sa_key.json
+                threads: 4
+              prod:
+                type: bigquery
+                method: service-account
+                project: project-34ac0f7c-00d8-4675-afe
+                dataset: dbt_poc_prod
+                location: europe-west6
+                keyfile: /tmp/sa_key.json
+                threads: 8
+          EOF
+
+      # ── 6. dbt debug ────────────────────────────────────────────────────
+      - name: dbt debug
+        working-directory: dbt_poc
+        run: dbt debug
+
+      # ── 7. dbt run ──────────────────────────────────────────────────────
+      - name: dbt run (${{ env.DBT_TARGET }})
+        working-directory: dbt_poc
+        run: dbt run --target ${{ env.DBT_TARGET }}
+
+      # ── 8. dbt test ─────────────────────────────────────────────────────
+      - name: dbt test (${{ env.DBT_TARGET }})
+        working-directory: dbt_poc
+        run: dbt test --target ${{ env.DBT_TARGET }}
+
+      # ── 9. Limpiar credenciales ─────────────────────────────────────────
+      - name: Cleanup credentials
+        if: always()    # se ejecuta aunque el workflow falle
+        run: rm -f /tmp/sa_key.json

@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+R2-C001,Nikos,Papadopoulos,nikos.papa@rts2.gr,GR,2021-09-03,standard
+R2-C002,Elena,Georgiou,elena.geo@rts2.gr,GR,2022-01-17,premium
+R2-C003,Dimitris,Alexiou,dimitris.alex@rts2.gr,GR,2022-07-22,standard

@@ -1,0 +1,4 @@
+customer_id,first_name,last_name,email,country,signup_date,segment
+GBX-C001,Carlos,Garcia,carlos.garcia@gesbox.es,ES,2020-11-01,premium
+GBX-C002,Laura,Martinez,laura.martinez@gesbox.es,ES,2021-02-18,standard
+GBX-C003,Antonio,Lopez,antonio.lopez@gesbox.es,ES,2021-07-30,premium
