@@ -181,13 +181,3 @@ GROUP BY 1 ORDER BY 2 DESC;
 | Python / scripts locales | **Gratis** |
 | **TOTAL PoC** | **0 €** |
 
----
-
-## Próximos pasos (hacia producción)
-
-- [ ] Reemplazar CSVs por conexión real al DW on-premise (JDBC/ODBC)
-- [ ] Orquestar con Apache Airflow (Cloud Composer en GCP)
-- [ ] Mover ingesta a Cloud Run
-- [ ] Añadir entorno `prod` en profiles.yml
-- [ ] CI/CD con GitHub Actions (`dbt run` en cada PR)
-- [ ] dbt Cloud para scheduling y observabilidad
