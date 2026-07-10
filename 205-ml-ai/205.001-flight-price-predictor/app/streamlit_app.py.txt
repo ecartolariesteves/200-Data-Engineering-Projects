@@ -1,0 +1,96 @@
+"""
+app/streamlit_app.py — Interfaz interactiva del predictor de vuelos
+"""
+
+import joblib
+import pandas as pd
+import streamlit as st
+from pathlib import Path
+
+st.set_page_config(page_title="Flight Price Predictor", page_icon="✈️", layout="centered")
+st.title("✈️ Flight Price Predictor")
+st.caption("Paso 1 · ML Clásico · Proyecto 205.01 — 205-ml-ai")
+st.markdown("Completá los datos del vuelo y el modelo predecirá el precio estimado.")
+
+MODEL_PATH = Path(__file__).parent.parent / "models" / "flight_model.pkl"
+
+@st.cache_resource
+def load_model():
+    if not MODEL_PATH.exists():
+        return None
+    return joblib.load(MODEL_PATH)
+
+model = load_model()
+
+if model is None:
+    st.error("⚠️ Modelo no encontrado. Ejecutá primero:\n\n```bash\npython generate_data.py\npython train_model.py\n```")
+    st.stop()
+
+st.divider()
+st.subheader("Datos del vuelo")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.selectbox("Origen", ["Buenos Aires"], disabled=True)
+    destination = st.selectbox("Destino", ["Miami", "Madrid", "São Paulo", "Santiago", "Lima", "Bogotá", "Ciudad de México", "Nueva York"])
+    airline = st.selectbox("Aerolínea", ["Aerolínea A", "Aerolínea B", "Aerolínea C", "Aerolínea D"], help="A = premium (+15%), C y D = low cost (-20%)")
+    num_stops = st.radio("Escalas", options=[0, 1, 2], format_func=lambda x: ["Directo ✈️", "1 escala", "2 escalas"][x], horizontal=True)
+
+with col2:
+    days_in_advance = st.slider("Días de anticipación", min_value=1, max_value=180, value=30)
+    if days_in_advance <= 7:
+        st.warning("⚠️ Última semana — precio muy alto (+60%)")
+    elif days_in_advance <= 30:
+        st.info("📅 Menos de un mes — precio normal")
+    elif days_in_advance >= 90:
+        st.success("✅ Más de 3 meses — descuento ~15%")
+
+    day_of_week = st.selectbox("Día de la semana", ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"])
+    departure_hour = st.slider("Hora de salida", min_value=0, max_value=23, value=10, format="%d:00")
+
+DISTANCES = {
+    "Miami": 8950, "Madrid": 10050, "São Paulo": 1900,
+    "Santiago": 1140, "Lima": 3150, "Bogotá": 4580,
+    "Ciudad de México": 7400, "Nueva York": 8530,
+}
+
+input_data = pd.DataFrame([{
+    "origin":          "Buenos Aires",
+    "destination":     destination,
+    "distance_km":     DISTANCES[destination],
+    "airline":         airline,
+    "days_in_advance": days_in_advance,
+    "day_of_week":     day_of_week,
+    "departure_hour":  departure_hour,
+    "num_stops":       num_stops,
+}])
+
+predicted_price = model.predict(input_data)[0]
+
+st.divider()
+col_price, col_info = st.columns([2, 3])
+
+with col_price:
+    st.metric(label="💰 Precio estimado", value=f"${predicted_price:,.0f} USD")
+
+with col_info:
+    st.markdown("**Factores principales:**")
+    factors = []
+    if days_in_advance <= 7:       factors.append("🔴 Compra tardía (+60%)")
+    if day_of_week in ["Viernes", "Domingo"]: factors.append("🟠 Día peak (+20%)")
+    if airline == "Aerolínea A":   factors.append("🟡 Aerolínea premium (+15%)")
+    if airline in ["Aerolínea C", "Aerolínea D"]: factors.append("🟢 Low cost (-20%)")
+    if departure_hour < 6:         factors.append("🟢 Vuelo de madrugada (-15%)")
+    if num_stops > 0:              factors.append(f"🟢 {num_stops} escala(s) (-${num_stops*25})")
+    for f in factors or ["- Condiciones normales"]:
+        st.markdown(f"- {f}")
+
+with st.expander("🎓 ¿Cómo funciona este predictor?"):
+    st.markdown("""
+    1. **Datos sintéticos** — 5.000 vuelos con reglas de negocio reales
+    2. **Feature engineering** — variables como `days_in_advance` y `day_of_week`
+    3. **Preprocesamiento** — OneHotEncoder para categorías, StandardScaler para números
+    4. **Random Forest** — 100 árboles de decisión que votan en conjunto
+    5. **Evaluación** — MAE, RMSE, R² en el 20% de datos que el modelo nunca vio
+    """)
